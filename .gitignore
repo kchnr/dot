@@ -9,3 +9,6 @@
 
 # zcompdump
 .zcompdump*
+
+# ssh
+.ssh

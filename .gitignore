@@ -1,0 +1,11 @@
+# bash stuff
+.bash_history
+
+# zsh stuff
+.zsh_history
+
+# nvim
+.local/share/nvim/shada/main.shada
+
+# zcompdump
+.zcompdump*

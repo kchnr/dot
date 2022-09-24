@@ -1,3 +1,5 @@
 [user]
 	name = kchnr
 	email = jean.kirchner@gmail.com
+[core]
+	editor = nvim

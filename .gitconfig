@@ -2,7 +2,7 @@
 	name = kchnr
 	email = jean.kirchner@gmail.com
 [core]
-	editor = nvim
+	editor = vi
 
 [diff]
 [color]

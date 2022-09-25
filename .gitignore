@@ -12,3 +12,10 @@
 
 # ssh
 .ssh
+
+# windows wsl2 stuff
+.aws
+.azure
+.docker/
+.vscode-server/
+.wget-hsts

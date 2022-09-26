@@ -152,3 +152,7 @@
 /var
 /work
 /writing
+/.zshrc.pre-oh-my-zsh
+/.sudo_as_admin_successful
+/.landscape
+/.motd_shown

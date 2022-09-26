@@ -99,3 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export PATH=${PATH}:/usr/local/bin
+export PATH="~/bin:$PATH" 
+
+alias vi=nvim
+alias vim=nvim

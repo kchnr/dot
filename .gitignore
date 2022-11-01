@@ -156,3 +156,5 @@
 /.sudo_as_admin_successful
 /.landscape
 /.motd_shown
+/.cargo
+/.rustup

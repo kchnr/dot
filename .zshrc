@@ -105,3 +105,13 @@ export PATH="~/bin:$PATH"
 
 alias vi=nvim
 alias vim=nvim
+
+# npm
+export PATH=~/.npm-global/bin:$PATH
+
+# pnpm
+export PNPM_HOME="/home/jan/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+#
+#

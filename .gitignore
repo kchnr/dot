@@ -158,3 +158,6 @@
 /.motd_shown
 /.cargo
 /.rustup
+/node_modules
+/.npm-global
+

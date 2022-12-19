@@ -1,0 +1,2 @@
+#!/bin/sh
+java -jar /Users/jean/.puml/plantuml-1.2022.5.jar -gui

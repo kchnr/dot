@@ -210,6 +210,7 @@
 /.terraform.d/
 /.vscode-insiders/
 /.vscode/
+/.dbus/
 Builds/
 Calibre Library/
 go/

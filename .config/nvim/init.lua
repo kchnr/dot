@@ -196,7 +196,7 @@ require('telescope').setup {
         ['<C-d>'] = false,
       },
     },
-    file_ignore_patterns = { "node%_modules/.*", "dist/" }
+    file_ignore_patterns = { "node%_modules/.*", "dist/", "target/", "build/" }
   },
 }
 
@@ -437,3 +437,6 @@ cmp.setup {
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2

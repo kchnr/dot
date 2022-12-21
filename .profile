@@ -20,5 +20,5 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-. "$HOME/.cargo/env"
 
+. "$HOME/.cargo/env"

@@ -113,3 +113,5 @@ export NVM_DIR="$HOME/.nvm"
 export PNPM_HOME="~/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+export PATH="/Users/jean/prj/clutch/clutch-cli:$PATH"

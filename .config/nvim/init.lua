@@ -58,17 +58,15 @@ require('packer').startup(function(use)
   -- Fuzzy Finder Algorithm which requires local dependencies to be built. Only load if `make` is available
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
 
-  -- Github Copilot
-  --use 'github/copilot.vim'
   use {
-  "zbirenbaum/copilot.lua",
-  event = "InsertEnter",
-  config = function ()
-    vim.schedule(function()
-      require("copilot").setup()
-    end)
-  end,
-}
+    "zbirenbaum/copilot.lua",
+    event = "VimEnter",
+    config = function()
+      vim.defer_fn(function()
+        require("copilot").setup()
+      end, 100)
+    end,
+  }
 
   use {
     "zbirenbaum/copilot-cmp",

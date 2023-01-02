@@ -59,7 +59,26 @@ require('packer').startup(function(use)
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
 
   -- Github Copilot
-  use 'github/copilot.vim'
+  --use 'github/copilot.vim'
+  use {
+  "zbirenbaum/copilot.lua",
+  event = "InsertEnter",
+  config = function ()
+    vim.schedule(function()
+      require("copilot").setup()
+    end)
+  end,
+}
+
+  use {
+    "zbirenbaum/copilot-cmp",
+    after = { "copilot.lua" },
+    config = function ()
+      require("copilot_cmp").setup {
+        method = "getCompletionsCycling",
+      }
+  end
+}
 
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')

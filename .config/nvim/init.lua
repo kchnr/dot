@@ -1,3 +1,7 @@
+-- Disable Net RW
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- Install packer
 local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
 local is_bootstrap = false
@@ -29,11 +33,11 @@ require('packer').startup(function(use)
   }
 
   use {
-      'nvim-treesitter/nvim-treesitter',
-      run = function()
-          local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-          ts_update()
-      end,
+    'nvim-treesitter/nvim-treesitter',
+    run = function()
+      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+      ts_update()
+    end,
   }
 
   use { -- Additional text objects via treesitter
@@ -71,12 +75,15 @@ require('packer').startup(function(use)
   use {
     "zbirenbaum/copilot-cmp",
     after = { "copilot.lua" },
-    config = function ()
+    config = function()
       require("copilot_cmp").setup {
         method = "getCompletionsCycling",
       }
-  end
-}
+    end
+  }
+
+
+  use 'nvim-tree/nvim-tree.lua'
 
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
@@ -360,12 +367,14 @@ require('mason').setup()
 
 -- Enable the following language servers
 -- Feel free to add/remove any LSPs that you want here. They will automatically be installed
-local servers = { 'rust_analyzer', 'pyright', 'tsserver'  }
+local servers = { 'rust_analyzer', 'pyright', 'tsserver' }
 
 -- Ensure the servers above are installed
 require('mason-lspconfig').setup {
   ensure_installed = servers,
 }
+
+require("nvim-tree").setup()
 
 -- nvim-cmp supports additional completion capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()

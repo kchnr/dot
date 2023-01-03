@@ -113,5 +113,10 @@ export NVM_DIR="$HOME/.nvm"
 export PNPM_HOME="~/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+#
+# go lang
+#
+export PATH=$PATH:/usr/local/go/bin
 
 export PATH="/Users/jean/prj/clutch/clutch-cli:$PATH"
+

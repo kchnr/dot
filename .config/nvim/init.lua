@@ -212,6 +212,9 @@ require('gitsigns').setup {
   },
 }
 
+-- nvim tree
+require("nvim-tree").setup()
+
 -- [[ Configure Telescope ]]
 -- See `:help telescope` and `:help telescope.setup()`
 require('telescope').setup {

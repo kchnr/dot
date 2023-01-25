@@ -131,3 +131,5 @@ export PATH="/Users/jean/prj/clutch/clutch-cli:$PATH"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+source ~/.docker/init-zsh.sh || true # Added by Docker Desktop

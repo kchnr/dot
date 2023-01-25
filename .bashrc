@@ -117,3 +117,5 @@ fi
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
+
+source ~/.docker/init-bash.sh || true # Added by Docker Desktop

@@ -212,8 +212,11 @@
 /.vscode/
 /.dbus/
 /.bun/
+/.config/configstore/
+/.cmake/
 Builds/
 Calibre Library/
 Google Drive
 go/
 perl5/
+.eslint_d

@@ -133,3 +133,5 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 source ~/.docker/init-zsh.sh || true # Added by Docker Desktop
+
+source /Users/jean/.docker/init-zsh.sh || true # Added by Docker Desktop

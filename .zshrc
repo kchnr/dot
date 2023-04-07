@@ -134,6 +134,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="~/prj/clutch/clutch-cli:$PATH"
 
 # bun completions
-[ -s "/Users/jean/.bun/_bun" ] && source "/Users/jean/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 export PATH="/Users/jean/.lucy/bin:$PATH"

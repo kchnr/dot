@@ -118,9 +118,6 @@ export PATH="$PNPM_HOME:$PATH"
 #
 export PATH=$PATH:/usr/local/go/bin
 
-export PATH="/Users/jean/prj/clutch/clutch-cli:$PATH"
-
-
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
@@ -135,3 +132,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 source ~/.docker/init-zsh.sh || true # Added by Docker Desktop
 
 source /Users/jean/.docker/init-zsh.sh || true # Added by Docker Desktop
+
+export PATH="~/prj/clutch/clutch-cli:$PATH"

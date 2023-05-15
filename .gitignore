@@ -214,6 +214,7 @@
 /.bun/
 /.config/configstore/
 /.cmake/
+/.lein/
 Builds/
 Calibre Library/
 Google Drive

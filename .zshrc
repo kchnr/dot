@@ -100,6 +100,8 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 PATH="/usr/local/bin:$PATH"
+PATH="$HOME/bin:$PATH"
+PATH="$HOME/.config/emacs/bin:$PATH"
 
 alias lua=luajit
 alias vi=nvim
@@ -110,7 +112,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # pnpm
-export PNPM_HOME="~/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 #
@@ -123,10 +125,15 @@ export PATH=$PATH:/usr/local/go/bin
 
 
 # bun completions
-[ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 export PATH="~/prj/clutch/clutch-cli:$PATH"
+
+# bun completions
+[ -s "/Users/jean/.bun/_bun" ] && source "/Users/jean/.bun/_bun"
+
+export PATH="/Users/jean/.lucy/bin:$PATH"

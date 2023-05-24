@@ -215,6 +215,9 @@
 /.config/configstore/
 /.cmake/
 /.lein/
+/.composer/
+/.config/emacs/
+/.lucy/
 Builds/
 Calibre Library/
 Google Drive

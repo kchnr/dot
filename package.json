@@ -1,5 +1,8 @@
 {
-	"devDependencies": {
-		"typescript": "^4.8.4"
-	}
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "lerna": "^7.1.5"
+  }
 }

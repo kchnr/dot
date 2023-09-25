@@ -214,10 +214,12 @@
 /.bun/
 /.config/configstore/
 /.cmake/
+.idea/
 /.lein/
 /.composer/
 /.config/emacs/
 /.lucy/
+nohup.out
 Builds/
 Calibre Library/
 Google Drive

@@ -103,6 +103,10 @@ PATH="/usr/local/bin:$PATH"
 PATH="$HOME/bin:$PATH"
 PATH="$HOME/.config/emacs/bin:$PATH"
 
+# Go bin 
+PATH="$HOME/go/bin:$PATH"
+
+
 alias lua=luajit
 alias vi=nvim
 alias vim=nvim
@@ -115,10 +119,6 @@ export NVM_DIR="$HOME/.nvm"
 export PNPM_HOME="$HOME/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
-#
-# go lang
-#
-export PATH=$PATH:/usr/local/go/bin
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
@@ -131,9 +131,15 @@ export PATH=$PATH:/usr/local/go/bin
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-export PATH="~/prj/clutch/clutch-cli:$PATH"
-
-# bun completions
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+export PATH="$HOME/prj/clutch/clutch-cli:$PATH"
 
 export PATH="/Users/jean/.lucy/bin:$PATH"
+export PATH="/Applications/WebStorm.app/Contents/MacOS:$PATH" 
+export PATH="/Applications/IntelliJ IDEA CE.app/Contents/MacOS:$PATH"
+
+# bun completions
+[ -s "/Users/jean/.bun/_bun" ] && source "/Users/jean/.bun/_bun"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

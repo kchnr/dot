@@ -1,0 +1,35 @@
+#!/bin/bash
+# opens webstorm passing parameters to it detaching it from terminal
+echo "go create will create the folder structure and go.mod file, just pass module/project name as a parameter that will be used in the go mod init command"
+
+go mod init "$@"
+mkdir -p bin "cmd/$1" internal tests
+
+touch "cmd/$1/main.go"
+cat <<EOF > "cmd/$1/main.go"
+package main
+
+import (
+	"bufio"
+	"os"
+)
+
+func main() {
+	scanner := bufio.NewScanner(os.Stdin)
+	for scanner.Scan() {
+		text := scanner.Text()
+		println(text)
+	}
+}
+EOF
+
+touch Makefile
+cat <<EOF > Makefile
+run:
+	go run cmd/$1/main.go
+EOF
+
+
+
+exit 0
+

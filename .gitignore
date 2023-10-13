@@ -219,6 +219,11 @@
 /.composer/
 /.config/emacs/
 /.lucy/
+/.config/wireshark/
+.config/github-copilot/hosts.json
+.config/github-copilot/versions.json
+.matplotlib/
+bin/openapitools/
 nohup.out
 Builds/
 Calibre Library/

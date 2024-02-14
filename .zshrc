@@ -101,11 +101,9 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 PATH="/usr/local/bin:$PATH"
 PATH="$HOME/bin:$PATH"
-PATH="$HOME/.config/emacs/bin:$PATH"
 
 # Go bin 
 PATH="$HOME/go/bin:$PATH"
-
 
 alias lua=luajit
 alias vi=nvim
@@ -143,7 +141,4 @@ export PATH="/Applications/IntelliJ IDEA CE.app/Contents/MacOS:$PATH"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-
-export PATH=$PATH:~/bin/openapitools/
 

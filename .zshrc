@@ -142,3 +142,9 @@ export PATH="/Applications/IntelliJ IDEA CE.app/Contents/MacOS:$PATH"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+
+# opam configuration
+[[ ! -r /Users/jean/.opam/opam-init/init.zsh ]] || source /Users/jean/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null

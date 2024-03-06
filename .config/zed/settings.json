@@ -15,4 +15,9 @@
   "autosave": "on_focus_change",
   "vim_mode": true,
   "ensure_final_newline_on_save": false
+  "base_keymap": "VSCode",
+  "project_panel": {
+    "dock": "right"
+  },
+  "formatter": "prettier"
 }

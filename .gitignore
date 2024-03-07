@@ -272,3 +272,4 @@ perl5/
 Games/
 .zsh_sessions
 .prettierd
+.config/alacritty/

@@ -259,6 +259,10 @@ perl5/
 .config/xdg-terminals.list
 .config/zed/.tmp*
 .config/zed/embeddings/*
+.config/bruno/
+.config/google-chrome/
+.config/menus/
+.gnome/
 .factorio/
 .mozilla/
 .nvidia-settings-rc

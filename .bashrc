@@ -118,9 +118,4 @@ fi
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
 
-if [ "$(uname)" == "Darwin" ]; then
-  source ~/.docker/init-bash.sh || true # Added by Docker Desktop
-  source /Users/jean/.docker/init-bash.sh || true # Added by Docker Desktop
-fi
-
 zsh

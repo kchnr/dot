@@ -263,6 +263,7 @@ perl5/
 .config/google-chrome/
 .config/menus/
 .gnome/
+.config/lnav/*
 .factorio/
 .mozilla/
 .nvidia-settings-rc
@@ -277,3 +278,5 @@ Games/
 .zsh_sessions
 .prettierd
 .config/alacritty/
+.soapuios
+.oh-my-zsh

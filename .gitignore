@@ -280,3 +280,5 @@ Games/
 .config/alacritty/
 .soapuios
 .oh-my-zsh
+default-soapui-workspace.xml
+soapui-settings.xml

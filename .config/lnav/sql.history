@@ -1,0 +1,32 @@
+SELECT
+SELECT * FROM generic_log WHERE log_level = 'DEBUG'
+SELECT * FROM generic_log WHERE level = 'DEBUG'
+SELECT * FROM generic_log
+select * from bunyan_log limit 10;
+select * from access_log;
+select * from alb_log;
+select * from 
+select * from caddy_log
+select * from caddy_log;
+select * from journald_json_log;
+select * from nextcloud;
+select * from clutch;
+select * from clutch where message not like '%QueueClient%' ;
+select * from clutch;
+SELECT * FROM clutch ; 
+select * from clutch where level = 'debug';
+select * from clutch ; 
+select * from a; 
+select * from clutch ;
+drop table clutch ;
+select * from clutch;
+select * from clutch where level = 'debug';
+select * from clutch where level = 'INFO';
+select * from clutch where v$message not like '%CRON%' or message not like '%Queue%';
+select * from clutch where message not like '%CRON%' 
+select * from clutch where message not like '%CRON%' and message not like '%Queue%' ; 
+select * from clutch where message not like '%CRON%' and message not like '%Queue%' and message not like 'LoansDataPoller%' ; 
+select * from clutch where message not like '%CRON%' and message not like '%Queue%' and message not like 'LoansDataPoller%' and message not like 'rudderstack keys'; 
+select * from clutch where message not like '%CRON%' and message not like '%Queue%' and message not like 'LoansDataPoller%' ; 
+select * from clutch where message not like '%CRON%' and message not like '%Queue%' and message not like 'LoansDataPoller%' and message not like 'rudderstack keys'; 
+qq

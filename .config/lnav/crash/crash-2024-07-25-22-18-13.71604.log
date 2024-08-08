@@ -1,0 +1,1475 @@
+2024-07-25T22:15:50.779 D t0 pollable.cc:41 pollable attach 0x124804140 to 0x600002550018
+2024-07-25T22:15:50.814 I t0 lnav.cc:2550 lnav started
+2024-07-25T22:15:50.818 I t0 lnav_config.cc:1801 loading builtin configuration into default
+2024-07-25T22:15:50.827 I t0 lnav_config.cc:1803 loading builtin configuration into base
+2024-07-25T22:15:50.835 I t0 lnav_config.cc:1806 loading installed configuration files
+2024-07-25T22:15:50.836 I t0 lnav_config.cc:1836 loading user configuration
+2024-07-25T22:15:50.836 I t0 lnav_config.cc:1691 loading configuration from /Users/jean/.config/lnav/config.json
+2024-07-25T22:15:50.836 I t0 log.annotate.cc:84 preparing annotation condition expression: SELECT 1 WHERE :log_body LIKE '%[context]%[/context]%'
+2024-07-25T22:15:50.846 D t0 log_format_loader.cc:1356 Loading default formats
+2024-07-25T22:15:50.846 D t0 log_format_loader.cc:86 Loading format -- access_log
+2024-07-25T22:15:50.846 D t0 log_format_loader.cc:86 Loading format -- alb_log
+2024-07-25T22:15:50.846 D t0 log_format_loader.cc:86 Loading format -- block_log
+2024-07-25T22:15:50.846 D t0 log_format_loader.cc:86 Loading format -- bunyan_log
+2024-07-25T22:15:50.846 D t0 log_format_loader.cc:86 Loading format -- candlepin_log
+2024-07-25T22:15:50.847 D t0 log_format_loader.cc:86 Loading format -- choose_repo_log
+2024-07-25T22:15:50.847 D t0 log_format_loader.cc:86 Loading format -- cloudflare_json_log
+2024-07-25T22:15:50.847 D t0 log_format_loader.cc:86 Loading format -- cloudvm_ram_log
+2024-07-25T22:15:50.847 D t0 log_format_loader.cc:86 Loading format -- cups_log
+2024-07-25T22:15:50.847 D t0 log_format_loader.cc:86 Loading format -- dpkg_log
+2024-07-25T22:15:50.847 D t0 log_format_loader.cc:86 Loading format -- elb_log
+2024-07-25T22:15:50.848 D t0 log_format_loader.cc:86 Loading format -- engine_log
+2024-07-25T22:15:50.848 D t0 log_format_loader.cc:86 Loading format -- error_log
+2024-07-25T22:15:50.848 D t0 log_format_loader.cc:86 Loading format -- esx_syslog_log
+2024-07-25T22:15:50.848 D t0 log_format_loader.cc:86 Loading format -- fsck_hfs_log
+2024-07-25T22:15:50.848 D t0 log_format_loader.cc:86 Loading format -- github_events_log
+2024-07-25T22:15:50.848 D t0 log_format_loader.cc:86 Loading format -- glog_log
+2024-07-25T22:15:50.848 D t0 log_format_loader.cc:86 Loading format -- haproxy_log
+2024-07-25T22:15:50.849 D t0 log_format_loader.cc:86 Loading format -- java_log
+2024-07-25T22:15:50.849 D t0 log_format_loader.cc:86 Loading format -- journald_json_log
+2024-07-25T22:15:50.849 D t0 log_format_loader.cc:86 Loading format -- katello_log
+2024-07-25T22:15:50.849 D t0 log_format_loader.cc:86 Loading format -- nextcloud
+2024-07-25T22:15:50.850 D t0 log_format_loader.cc:86 Loading format -- nextflow_log
+2024-07-25T22:15:50.850 D t0 log_format_loader.cc:86 Loading format -- openam_log
+2024-07-25T22:15:50.850 D t0 log_format_loader.cc:86 Loading format -- openamdb_log
+2024-07-25T22:15:50.850 D t0 log_format_loader.cc:86 Loading format -- openstack_log
+2024-07-25T22:15:50.850 D t0 log_format_loader.cc:86 Loading format -- page_log
+2024-07-25T22:15:50.850 D t0 log_format_loader.cc:86 Loading format -- papertrail_log
+2024-07-25T22:15:50.850 D t0 log_format_loader.cc:86 Loading format -- pcap_log
+2024-07-25T22:15:50.850 D t0 log_format_loader.cc:86 Loading format -- procstate_log
+2024-07-25T22:15:50.850 D t0 log_format_loader.cc:86 Loading format -- redis_log
+2024-07-25T22:15:50.850 D t0 log_format_loader.cc:86 Loading format -- snaplogic_log
+2024-07-25T22:15:50.851 D t0 log_format_loader.cc:86 Loading format -- sssd_log
+2024-07-25T22:15:50.851 D t0 log_format_loader.cc:86 Loading format -- strace_log
+2024-07-25T22:15:50.851 D t0 log_format_loader.cc:86 Loading format -- sudo_log
+2024-07-25T22:15:50.851 D t0 log_format_loader.cc:86 Loading format -- syslog_log
+2024-07-25T22:15:50.851 D t0 log_format_loader.cc:86 Loading format -- s3_log
+2024-07-25T22:15:50.851 D t0 log_format_loader.cc:86 Loading format -- tcf_log
+2024-07-25T22:15:50.851 D t0 log_format_loader.cc:86 Loading format -- tcsh_history
+2024-07-25T22:15:50.852 D t0 log_format_loader.cc:86 Loading format -- unifi_log
+2024-07-25T22:15:50.852 D t0 log_format_loader.cc:86 Loading format -- uwsgi_log
+2024-07-25T22:15:50.852 D t0 log_format_loader.cc:86 Loading format -- vdsm_log
+2024-07-25T22:15:50.852 D t0 log_format_loader.cc:86 Loading format -- vmk_log
+2024-07-25T22:15:50.852 D t0 log_format_loader.cc:86 Loading format -- vmw_log
+2024-07-25T22:15:50.854 D t0 log_format_loader.cc:86 Loading format -- vmw_vc_svc_log
+2024-07-25T22:15:50.854 D t0 log_format_loader.cc:86 Loading format -- vmw_py_log
+2024-07-25T22:15:50.854 D t0 log_format_loader.cc:86 Loading format -- vpostgres_log
+2024-07-25T22:15:50.854 D t0 log_format_loader.cc:86 Loading format -- xmlrpc_log
+2024-07-25T22:15:50.854 I t0 log_format_loader.cc:1319 loading formats from path: /etc/lnav/formats/*/*.json
+2024-07-25T22:15:50.854 I t0 log_format_loader.cc:1319 loading formats from path: /opt/homebrew/Cellar/lnav/0.12.2/etc/lnav/formats/*/*.json
+2024-07-25T22:15:50.854 I t0 log_format_loader.cc:1319 loading formats from path: /Users/jean/.config/lnav/formats/*/*.json
+2024-07-25T22:15:50.854 I t0 log_format_loader.cc:1231 loading formats from file: /Users/jean/.config/lnav/formats/installed/clutch.json
+2024-07-25T22:15:50.854 D t0 log_format_loader.cc:86 Loading format -- clutch
+2024-07-25T22:15:50.854 I t0 log_format_loader.cc:1334 contents of format file '/Users/jean/.config/lnav/formats/installed/clutch.json':
+2024-07-25T22:15:50.854 I t0 log_format_loader.cc:1338   found format: clutch
+2024-07-25T22:15:50.855 W t0 log_format.cc:2883 /alb_log/regex/std:body field 'body' not found in pattern
+2024-07-25T22:15:50.855 W t0 log_format.cc:2871 /block_log/regex/sq-brackets:level field 'level' not found in pattern
+2024-07-25T22:15:50.855 W t0 log_format.cc:2871 /block_log/regex/std:level field 'level' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format.cc:2871 /candlepin_log/regex/other:level field 'level' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format.cc:2871 /candlepin_log/regex/reqorg:level field 'level' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format.cc:2871 /cloudvm_ram_log/regex/std:level field 'level' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format_loader.cc:1411 Format collision, format 'cups_log' matches sample from 'error_log'
+2024-07-25T22:15:50.856 W t0 log_format.cc:2871 /dpkg_log/regex/std:level field 'level' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format_loader.cc:1411 Format collision, format 'error_log' matches sample from 'cups_log'
+2024-07-25T22:15:50.856 W t0 log_format_loader.cc:1411 Format collision, format 'esx_syslog_log' matches sample from 'vmk_log'
+2024-07-25T22:15:50.856 W t0 log_format_loader.cc:1411 Format collision, format 'esx_syslog_log' matches sample from 'vmw_log'
+2024-07-25T22:15:50.856 W t0 log_format.cc:2871 /fsck_hfs_log/regex/std:level field 'level' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format.cc:2871 /haproxy_log/regex/event_started:level field 'level' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format.cc:2883 /haproxy_log/regex/event_started:body field 'body' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format.cc:2871 /haproxy_log/regex/event_stopped:level field 'level' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format.cc:2883 /haproxy_log/regex/event_stopped:body field 'body' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format.cc:2871 /haproxy_log/regex/event_stopping:level field 'level' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format.cc:2883 /haproxy_log/regex/event_stopping:body field 'body' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format.cc:2871 /haproxy_log/regex/http:level field 'level' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format.cc:2883 /haproxy_log/regex/http:body field 'body' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format.cc:2871 /haproxy_log/regex/ssl:level field 'level' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format.cc:2883 /haproxy_log/regex/ssl:body field 'body' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format.cc:2871 /haproxy_log/regex/tcp:level field 'level' not found in pattern
+2024-07-25T22:15:50.856 W t0 log_format.cc:2883 /haproxy_log/regex/tcp:body field 'body' not found in pattern
+2024-07-25T22:15:50.859 W t0 log_format_loader.cc:1411 Format collision, format 'java_log' matches sample from 'vmw_log'
+2024-07-25T22:15:50.859 W t0 log_format.cc:2883 /katello_log/regex/log:body field 'body' not found in pattern
+2024-07-25T22:15:50.860 W t0 log_format.cc:2871 /openamdb_log/regex/std:level field 'level' not found in pattern
+2024-07-25T22:15:50.860 W t0 log_format_loader.cc:1411 Format collision, format 'openstack_log' matches sample from 's3_log'
+2024-07-25T22:15:50.860 W t0 log_format.cc:2871 /page_log/regex/1.7:level field 'level' not found in pattern
+2024-07-25T22:15:50.860 W t0 log_format.cc:2871 /page_log/regex/pre-1.7:level field 'level' not found in pattern
+2024-07-25T22:15:50.860 W t0 log_format.cc:2883 /page_log/regex/pre-1.7:body field 'body' not found in pattern
+2024-07-25T22:15:50.860 I t0 log_format.cc:2947 preparing file-format header expression: SELECT 1 WHERE :header REGEXP '^(?:a1b2c3d4|d4c3b2a1|a1b23c4d|4d3cb2a1).*'
+2024-07-25T22:15:50.860 I t0 log_format.cc:2947 preparing file-format header expression: SELECT 1 WHERE :header REGEXP '^0a0d0d0a.{8}(?:1a2b3c4d|4d3c2b1a).*'
+2024-07-25T22:15:50.860 W t0 log_format.cc:2871 /procstate_log/regex/std:level field 'level' not found in pattern
+2024-07-25T22:15:50.860 W t0 log_format.cc:2871 /redis_log/regex/sig:level field 'level' not found in pattern
+2024-07-25T22:15:50.861 W t0 log_format.cc:2883 /s3_log/regex/std:body field 'body' not found in pattern
+2024-07-25T22:15:50.861 W t0 log_format.cc:2883 /s3_log/regex/std-v2:body field 'body' not found in pattern
+2024-07-25T22:15:50.862 W t0 log_format.cc:2883 /sudo_log/regex/std:body field 'body' not found in pattern
+2024-07-25T22:15:50.862 W t0 log_format_loader.cc:1411 Format collision, format 'syslog_log' matches sample from 'elb_log'
+2024-07-25T22:15:50.862 W t0 log_format_loader.cc:1411 Format collision, format 'syslog_log' matches sample from 'haproxy_log'
+2024-07-25T22:15:50.862 W t0 log_format_loader.cc:1411 Format collision, format 'syslog_log' matches sample from 'java_log'
+2024-07-25T22:15:50.862 W t0 log_format_loader.cc:1411 Format collision, format 'syslog_log' matches sample from 'vmk_log'
+2024-07-25T22:15:50.862 W t0 log_format_loader.cc:1411 Format collision, format 'syslog_log' matches sample from 'vmw_log'
+2024-07-25T22:15:50.862 W t0 log_format.cc:2871 /tcf_log/regex/std:level field 'level' not found in pattern
+2024-07-25T22:15:50.862 W t0 log_format.cc:2871 /tcsh_history/regex/std:level field 'level' not found in pattern
+2024-07-25T22:15:50.862 W t0 log_format.cc:2883 /vmw_log/regex/esx-section:body field 'body' not found in pattern
+2024-07-25T22:15:50.862 W t0 log_format.cc:2871 /vmw_log/regex/hdr-ftr:level field 'level' not found in pattern
+2024-07-25T22:15:50.862 W t0 log_format.cc:2871 /vmw_log/regex/section:level field 'level' not found in pattern
+2024-07-25T22:15:50.862 W t0 log_format.cc:2883 /vmw_log/regex/section:body field 'body' not found in pattern
+2024-07-25T22:15:50.863 W t0 log_format_loader.cc:1411 Format collision, format 'vmw_log' matches sample from 'esx_syslog_log'
+2024-07-25T22:15:50.864 W t0 log_format.cc:2871 /xmlrpc_log/regex/main:level field 'level' not found in pattern
+2024-07-25T22:15:50.864 W t0 log_format_loader.cc:1440 Detected a cycle...
+2024-07-25T22:15:50.864 W t0 log_format_loader.cc:1444   Skipping builtin format -- cups_log
+2024-07-25T22:15:50.864 W t0 log_format_loader.cc:1444   Skipping builtin format -- error_log
+2024-07-25T22:15:50.864 W t0 log_format_loader.cc:1444   Skipping builtin format -- esx_syslog_log
+2024-07-25T22:15:50.864 W t0 log_format_loader.cc:1444   Skipping builtin format -- java_log
+2024-07-25T22:15:50.864 W t0 log_format_loader.cc:1444   Skipping builtin format -- syslog_log
+2024-07-25T22:15:50.864 W t0 log_format_loader.cc:1444   Skipping builtin format -- vmw_log
+2024-07-25T22:15:50.864 W t0 log_format_loader.cc:1440 Detected a cycle...
+2024-07-25T22:15:50.864 W t0 log_format_loader.cc:1444   Skipping builtin format -- esx_syslog_log
+2024-07-25T22:15:50.864 W t0 log_format_loader.cc:1444   Skipping builtin format -- java_log
+2024-07-25T22:15:50.864 W t0 log_format_loader.cc:1444   Skipping builtin format -- syslog_log
+2024-07-25T22:15:50.864 W t0 log_format_loader.cc:1444   Skipping builtin format -- vmw_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1465 Format order:
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   access_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   alb_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   block_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   bunyan_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   candlepin_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   choose_repo_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   cloudflare_json_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   cloudvm_ram_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   clutch
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   dpkg_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   elb_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   engine_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   fsck_hfs_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   github_events_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   glog_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   haproxy_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   journald_json_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   katello_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   nextcloud
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   nextflow_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   openam_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   openamdb_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   page_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   papertrail_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   pcap_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   procstate_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   redis_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   s3_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   snaplogic_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   sssd_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   strace_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   sudo_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   tcf_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   tcsh_history
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   unifi_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   uwsgi_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   vdsm_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   vmk_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   vmw_py_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   vmw_vc_svc_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   vpostgres_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   xmlrpc_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   openstack_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   cups_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   error_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   esx_syslog_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   vmw_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   java_log
+2024-07-25T22:15:50.864 I t0 log_format_loader.cc:1468   syslog_log
+2024-07-25T22:15:50.864 D t0 log_vtab_impl.cc:360 creating log format table: all_logs = 0x0
+2024-07-25T22:15:50.864 D t0 log_vtab_impl.cc:360 creating log format table: generic_log = 0x0
+2024-07-25T22:15:50.864 D t0 log_vtab_impl.cc:360 creating log format table: lnav_piper_log = 0x0
+2024-07-25T22:15:50.864 D t0 log_vtab_impl.cc:360 creating log format table: logfmt_log = 0x0
+2024-07-25T22:15:50.864 D t0 log_vtab_impl.cc:360 creating log format table: access_log = 0x0
+2024-07-25T22:15:50.864 D t0 log_vtab_impl.cc:360 creating log format table: alb_log = 0x0
+2024-07-25T22:15:50.864 D t0 log_vtab_impl.cc:360 creating log format table: block_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: bunyan_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: candlepin_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: choose_repo_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: cloudflare_json_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: cloudvm_ram_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: clutch = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: dpkg_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: elb_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: engine_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: fsck_hfs_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: github_events_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: glog_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: haproxy_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: journald_json_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: katello_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: nextcloud = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: nextflow_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: openam_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: openamdb_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: page_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: papertrail_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: pcap_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: procstate_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: redis_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: s3_log = 0x0
+2024-07-25T22:15:50.865 D t0 log_vtab_impl.cc:360 creating log format table: snaplogic_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: sssd_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: strace_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: sudo_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: tcf_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: tcsh_history = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: unifi_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: uwsgi_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: vdsm_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: vmk_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: vmw_py_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: vmw_vc_svc_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: vpostgres_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: xmlrpc_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: openstack_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: cups_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: error_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: esx_syslog_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: vmw_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: java_log = 0x0
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: syslog_log = 0x0
+2024-07-25T22:15:50.866 I t0 log_format_loader.cc:1488 executing SQL files in path: /etc/lnav/formats/*/*.sql
+2024-07-25T22:15:50.866 I t0 log_format_loader.cc:1488 executing SQL files in path: /opt/homebrew/Cellar/lnav/0.12.2/etc/lnav/formats/*/*.sql
+2024-07-25T22:15:50.866 I t0 log_format_loader.cc:1488 executing SQL files in path: /Users/jean/.config/lnav/formats/*/*.sql
+2024-07-25T22:15:50.866 D t0 log_vtab_impl.cc:360 creating log format table: cloudvm_ram_sizes = 0x0
+2024-07-25T22:15:50.867 D t0 log_vtab_impl.cc:360 creating log format table: procstate_procs = 0x0
+2024-07-25T22:15:50.867 D t0 log_vtab_impl.cc:360 creating log format table: vpx_lro_begin = 0x0
+2024-07-25T22:15:50.867 D t0 log_vtab_impl.cc:360 creating log format table: vpx_lro_error = 0x0
+2024-07-25T22:15:50.867 D t0 log_vtab_impl.cc:360 creating log format table: vpx_lro_finish = 0x0
+2024-07-25T22:15:50.867 D t0 log_vtab_impl.cc:360 creating log format table: vpxd_session_pool_stats = 0x0
+2024-07-25T22:15:50.867 D t0 log_vtab_impl.cc:360 creating log format table: vpxd_session_stats = 0x0
+2024-07-25T22:15:50.867 D t0 isc.cc:43 starting service thread for: isc::service<curl_looper>::service(std::string) [T = curl_looper] 
+2024-07-25T22:15:50.867 D t0 isc.cc:43 starting service thread for: isc::service<io_looper>::service(std::string) [T = io_looper] 
+2024-07-25T22:15:50.867 D t0 isc.cc:43 starting service thread for: isc::service<tailer::looper>::service(std::string) [T = tailer::looper] 
+2024-07-25T22:15:50.867 I t0 lnav.cc:3290 startup: lnav 0.12.2
+2024-07-25T22:15:50.867 I t1 piper.looper.cc:167 starting loop to capture: stdin (7 -1)
+2024-07-25T22:15:50.867 I t2 isc.cc:51 BEGIN isc thread: isc::service<curl_looper>::service(std::string) [T = curl_looper] 
+2024-07-25T22:15:50.867 I t0 lnav_log.cc:221 uname:
+2024-07-25T22:15:50.867 I t0 lnav_log.cc:222   sysname=Darwin
+2024-07-25T22:15:50.867 I t0 lnav_log.cc:223   nodename=kchnr.local
+2024-07-25T22:15:50.867 I t0 lnav_log.cc:224   machine=arm64
+2024-07-25T22:15:50.867 I t3 isc.cc:51 BEGIN isc thread: isc::service<tailer::looper>::service(std::string) [T = tailer::looper] 
+2024-07-25T22:15:50.867 I t0 lnav_log.cc:225   release=23.2.0
+2024-07-25T22:15:50.867 I t0 lnav_log.cc:226   version=Darwin Kernel Version 23.2.0: Wed Nov 15 21:53:18 PST 2023; root:xnu-10002.61.3~2/RELEASE_ARM64_T6000
+2024-07-25T22:15:50.867 I t0 lnav_log.cc:227 PCRE:
+2024-07-25T22:15:50.867 I t0 lnav_log.cc:228   jit=0
+2024-07-25T22:15:50.867 I t0 lnav_log.cc:229   jittarget=
+2024-07-25T22:15:50.867 I t0 lnav_log.cc:230 Environment:
+2024-07-25T22:15:50.867 I t0 lnav_log.cc:231   HOME=/Users/jean
+2024-07-25T22:15:50.867 I t0 lnav_log.cc:232   XDG_CONFIG_HOME=(null)
+2024-07-25T22:15:50.867 I t0 lnav_log.cc:233   LANG=en_IE.UTF-8
+2024-07-25T22:15:50.867 I t0 lnav_log.cc:234   PATH=/Users/jean/.opam/default/bin:/opt/homebrew/opt/llvm/bin:/Applications/IntelliJ IDEA CE.app/Contents/MacOS:/Applications/WebStorm.app/Contents/MacOS:/Users/jean/.lucy/bin:/Users/jean/prj/clutch/clutch-cli:/Users/jean/.bun/bin:/Users/jean/.local/bin:/Users/jean/.local/share/pnpm:/Users/jean/.nvm/versions/node/v20.11.0/bin:/Users/jean/go/bin:/Users/jean/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/jean/.opam/default/bin:/opt/homebrew/opt/llvm/bin:/Users/jean/.sdkman/candidates/maven/current/bin:/Users/jean/.sdkman/candidates/leiningen/current/bin:/Users/jean/.sdkman/candidates/java/current/bin:/Applications/IntelliJ IDEA CE.app/Contents/MacOS:/Applications/WebStorm.app/Contents/MacOS:/Users/jean/.lucy/bin:/Users/jean/prj/clutch/clutch-cli:/Users/jean/.bun/bin:/Users/jean/.local/bin:/Users/jean/.local/share/pnpm:/Users/jean/.nvm/versions/node/v20.11.0/bin:/Users/jean/go/bin:/Users/jean/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jean/.cargo/bin:/Applications/iTerm.app/Contents/Resources/utilities
+2024-07-25T22:15:50.867 I t0 lnav_log.cc:235   TERM=tmux-256color
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:236   TZ=(null)
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:237 Process:
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:238   pid=71604
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:239   ppid=68180
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:240   pgrp=71603
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:241   uid=501
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:242   gid=20
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:243   euid=501
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:244   egid=20
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:248   cwd=/Users/jean/prj/clutch/refipipeline/services/clutch-api
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:250 Executable:
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:251   version=lnav 0.12.2
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254 rusage:
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   utime=0.054581
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   stime=0.029975
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   maxrss=17170432
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   ixrss=0
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   idrss=0
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   isrss=0
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   minflt=905
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   majflt=384
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   nswap=0
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   inblock=0
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   oublock=0
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   msgsnd=1
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   msgrcv=0
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   nsignals=0
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   nvcsw=65
+2024-07-25T22:15:50.868 I t0 lnav_log.cc:254   nivcsw=171
+2024-07-25T22:15:50.868 I t0 lnav.cc:3292 Libraries:
+2024-07-25T22:15:50.868 I t0 lnav.cc:3294   bzip=1.0.8, 13-Jul-2019
+2024-07-25T22:15:50.868 I t0 lnav.cc:3297   curl=8.4.0 (2023-10-11)
+2024-07-25T22:15:50.868 I t0 lnav.cc:3300   libarchive=3007003
+2024-07-25T22:15:50.868 I t0 lnav.cc:3301     details=libarchive 3.5.3 zlib/1.2.12 liblzma/5.0.5 bz2lib/1.0.8
+2024-07-25T22:15:50.868 I t0 lnav.cc:3303   ncurses=6.4
+2024-07-25T22:15:50.868 I t0 lnav.cc:3304   pcre2=10.42 2022-12-11
+2024-07-25T22:15:50.868 I t0 lnav.cc:3305   readline=8.2
+2024-07-25T22:15:50.868 I t0 lnav.cc:3306   sqlite=3.46.0
+2024-07-25T22:15:50.868 I t0 lnav.cc:3307   zlib=1.2.12
+2024-07-25T22:15:50.868 I t0 lnav.cc:3308 lnav_data:
+2024-07-25T22:15:50.868 I t0 lnav.cc:3309   flags=0
+2024-07-25T22:15:50.868 I t0 lnav.cc:3310   commands:
+2024-07-25T22:15:50.868 I t0 lnav.cc:3317   files:
+2024-07-25T22:15:50.868 I t0 lnav.cc:3323     stdin
+2024-07-25T22:15:50.868 I t4 isc.cc:51 BEGIN isc thread: isc::service<io_looper>::service(std::string) [T = io_looper] 
+2024-07-25T22:15:50.869 D t0 pollable.cc:41 pollable attach 0x123e0b3c0 to 0x600002550018
+2024-07-25T22:15:50.872 D t0 view_curses.cc:724 COLOR_PAIRS = 32767
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: SELECT 3 BETWEEN 5 AND 10
+2024-07-25T22:15:50.877 I t0 command_executor.cc:406 sqlite3_changes() -> 1
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: SELECT 10 BETWEEN 5 AND 10
+2024-07-25T22:15:50.877 I t0 command_executor.cc:406 sqlite3_changes() -> 1
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: SELECT CAST(1.23 AS INTEGER)
+2024-07-25T22:15:50.877 I t0 command_executor.cc:406 sqlite3_changes() -> 1
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: SELECT CASE 1 WHEN 0 THEN 'zero' WHEN 1 THEN 'one' END
+2024-07-25T22:15:50.877 I t0 command_executor.cc:406 sqlite3_changes() -> 1
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: SELECT ('a2' < 'a10'), ('a2' < 'a10' COLLATE naturalnocase)
+2024-07-25T22:15:50.877 I t0 command_executor.cc:406 sqlite3_changes() -> 1
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: DETACH DATABASE customers
+2024-07-25T22:15:50.877 E t0 sql_util.cc:552 (1) statement aborts at 4: [DETACH DATABASE customers] no such database: customers
+2024-07-25T22:15:50.877 E t0 command_executor.cc:443 sqlite3_step error code: 1
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: SELECT 'foobar.log' GLOB '*.log'
+2024-07-25T22:15:50.877 I t0 command_executor.cc:406 sqlite3_changes() -> 1
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: SELECT 'Hello, World!' LIKE 'Hello, %!'
+2024-07-25T22:15:50.877 I t0 command_executor.cc:406 sqlite3_changes() -> 1
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: SELECT 'file-23' REGEXP 'file-\d+'
+2024-07-25T22:15:50.877 I t0 command_executor.cc:406 sqlite3_changes() -> 1
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: SELECT * FROM syslog_log
+2024-07-25T22:15:50.877 I t0 log_vtab_impl.cc:1773 vt_best_index(syslog_log, nConstraint=0)
+2024-07-25T22:15:50.877 I t0 command_executor.cc:406 sqlite3_changes() -> 1
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: INSERT INTO environ VALUES ('MSG', 'HELLO, WORLD!')
+2024-07-25T22:15:50.877 I t0 command_executor.cc:406 sqlite3_changes() -> 1
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: UPDATE syslog_log SET log_mark = 1 WHERE log_line = 40
+2024-07-25T22:15:50.877 I t0 log_vtab_impl.cc:1773 vt_best_index(syslog_log, nConstraint=1)
+2024-07-25T22:15:50.877 D t0 log_vtab_impl.cc:1795   column 0: op: =
+2024-07-25T22:15:50.877 I t0 log_vtab_impl.cc:1919 found index: SEARCH syslog_log USING log_line = ?
+2024-07-25T22:15:50.877 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: SELECT abs(-1)
+2024-07-25T22:15:50.877 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: SELECT acos(0.2)
+2024-07-25T22:15:50.877 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: SELECT acosh(1.2)
+2024-07-25T22:15:50.877 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.877 I t0 command_executor.cc:312 Executing SQL: SELECT anonymize('Hello, 192.168.1.2')
+2024-07-25T22:15:50.878 D t0 text_anonymizer.cc:514 tok_re 19 5:6
+2024-07-25T22:15:50.878 D t0 text_anonymizer.cc:514 tok_re 46 6:7
+2024-07-25T22:15:50.878 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.878 I t0 command_executor.cc:312 Executing SQL: SELECT asin(0.2)
+2024-07-25T22:15:50.878 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.878 I t0 command_executor.cc:312 Executing SQL: SELECT asinh(0.2)
+2024-07-25T22:15:50.878 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.878 I t0 command_executor.cc:312 Executing SQL: SELECT atan(0.2)
+2024-07-25T22:15:50.878 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.878 I t0 command_executor.cc:312 Executing SQL: SELECT degrees(atan2(5, 5))
+2024-07-25T22:15:50.878 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.878 I t0 command_executor.cc:312 Executing SQL: SELECT atanh(0.2)
+2024-07-25T22:15:50.878 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.878 I t0 command_executor.cc:312 Executing SQL: SELECT degrees(atn2(5, 5))
+2024-07-25T22:15:50.878 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.878 I t0 command_executor.cc:312 Executing SQL: SELECT avg(ex_duration) FROM lnav_example_log
+2024-07-25T22:15:50.878 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.878 I t0 command_executor.cc:312 Executing SQL: SELECT ex_procname, avg(ex_duration) FROM lnav_example_log GROUP BY ex_procname
+2024-07-25T22:15:50.878 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.878 I t0 command_executor.cc:312 Executing SQL: SELECT basename('foobar')
+2024-07-25T22:15:50.878 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.878 I t0 command_executor.cc:312 Executing SQL: SELECT basename('foo/bar')
+2024-07-25T22:15:50.878 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.878 I t0 command_executor.cc:312 Executing SQL: SELECT basename('foo/bar/')
+2024-07-25T22:15:50.878 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.878 I t0 command_executor.cc:312 Executing SQL: SELECT basename('')
+2024-07-25T22:15:50.878 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.878 I t0 command_executor.cc:312 Executing SQL: SELECT basename('foo\bar')
+2024-07-25T22:15:50.878 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT basename('/')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:267 compiling PRQL: from [{p='foo/bar'}] | select { fs.basename p }
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT ceil(1.23)
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT char(0x48, 0x49)
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT charindex('abc', 'abcabc', 2)
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT charindex('abc', 'abcdef', 2)
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT coalesce(null, 0, null)
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT count(*) FROM lnav_example_log
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT count(log_part) FROM lnav_example_log
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT date('2017-01-02T03:04:05')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT date('2017-01-02T03:04:05', '+1 day')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT date(1491341842, 'unixepoch')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT datetime('2017-01-02T03:04:05')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT datetime('2017-01-02T03:04:05', '+1 minute')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT datetime(1491341842, 'unixepoch')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT decode('%63%75%72%6c', 'uri')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT degrees(pi())
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT dirname('foo/bar')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT dirname('/foo/bar')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT dirname('/bar')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT dirname('foo\bar')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT dirname('')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT encode('Hello, World!', 'base64')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT encode('Hello, World!', 'hex')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT encode('Hello, World!', 'uri')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT endswith('notbad.jpg', '.jpg')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT endswith('notbad.png', '.jpg')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT exp(2)
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT extract('foo=1 bar=2 name="Rolo Tomassi"')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT extract('1.0 abc 2.0')
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT floor(1.23)
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT ifnull(data, raise_error('cannot read: ' || st_name, error)) FROM fstat('/non-existent')
+2024-07-25T22:15:50.879 E t0 sql_util.cc:552 (1) statement aborts at 13: [SELECT ifnull(data, raise_error('cannot read: ' || st_name, error)) FROM fstat('/non-existent')] lnav-error:{"level":"error","message":{"str":"cannot read: non-existent","attrs":[]},"r
+2024-07-25T22:15:50.879 E t0 command_executor.cc:443 sqlite3_step error code: 1
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT value FROM generate_series(10, 14)
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT value FROM generate_series(10, 14, 2)
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.879 I t0 command_executor.cc:312 Executing SQL: SELECT value FROM generate_series(1, 5, -1)
+2024-07-25T22:15:50.879 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.880 I t0 command_executor.cc:312 Executing SQL: SELECT gethostbyaddr('127.0.0.1')
+2024-07-25T22:15:50.884 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.884 I t0 command_executor.cc:312 Executing SQL: SELECT gethostbyname('localhost')
+2024-07-25T22:15:50.884 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.884 I t0 command_executor.cc:312 Executing SQL: SELECT glob('a*', 'abc')
+2024-07-25T22:15:50.884 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.884 I t0 command_executor.cc:312 Executing SQL: SELECT group_concat(ex_procname) FROM lnav_example_log
+2024-07-25T22:15:50.884 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.884 I t0 command_executor.cc:312 Executing SQL: SELECT group_concat(ex_procname, ', ') FROM lnav_example_log
+2024-07-25T22:15:50.884 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.884 I t0 command_executor.cc:312 Executing SQL: SELECT group_concat(DISTINCT ex_procname) FROM lnav_example_log
+2024-07-25T22:15:50.884 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.884 I t0 command_executor.cc:312 Executing SQL: SELECT group_spooky_hash(column1) FROM (VALUES ('abc'), ('123'))
+2024-07-25T22:15:50.884 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.884 I t0 command_executor.cc:312 Executing SQL: SELECT hex('abc')
+2024-07-25T22:15:50.884 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT humanize_duration(15 * 60)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT humanize_duration(1.5)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT humanize_file_size(10 * 1024 * 1024)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT humanize_id('cluster1')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT ifnull(null, 0)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT instr('abc', 'b')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT jget('1', '')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT jget('{ "a": 1, "b": 2 }', '/b')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT jget(null, '/msg', 'Hello')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT joinpath('foo', 'bar')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT joinpath('', 'foo', 'bar')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT joinpath('/', 'foo', 'bar')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT joinpath('/', 'foo', '/bar')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_array(NULL, 1, 2.1, 'three', json_array(4), json_object('five', 'six'))
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_array()
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_array_length('[1, 2, 3]')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_array_length('{"arr": [1, 2, 3]}', '$.arr')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_concat(NULL, 4)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_concat('[1, 2, 3]', 4, 5)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_concat('[1, 2, 3]', json('[4, 5]'))
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_contains('[1, 2, 3]', 4)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_contains('["abc", "def"]', 'def')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT * FROM json_each('[null,1,"two",{"three":4.5}]')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_extract('{"num": 1}', '$.num')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_extract('{"num": 1, "val": 2}', '$.num', '$.val')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_extract('{"obj": {"sub": 1}}', '$.obj')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_group_array('one', 2, 3.4)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_group_array(column1) FROM (VALUES (1), (2), (3))
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_group_object('a', 1, 'b', 2)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_group_object(column1, column2) FROM (VALUES ('a', 1), ('b', 2))
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_insert('[1, 2]', '$[#]', 3)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_insert('{"a": 1}', '$.b', 2)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_insert('{"a": 1}', '$.a', 2)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_insert('{"a": 1}', '$.b', 2, '$.c', 3)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_object('a', 1, 'b', 'c')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_object()
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_quote('Hello, World!')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_quote(json('"Hello, World!"'))
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_remove('[1,2,3]', '$[1]', '$[1]')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_remove('{"a":1,"b":2}', '$.b')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_replace('{"a": 1}', '$.a', 2)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_replace('{"a": 1}', '$.a', 2, '$.b', 3)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_set('[1, 2]', '$[1]', 3)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_set('{"a": 1}', '$.a', 2, '$.b', 3)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT key,value,type,atom,fullkey,path FROM json_tree('[null,1,"two",{"three":4.5}]')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_type('[null,1,2.1,"three",{"four":5}]')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_type('[null,1,2.1,"three",{"four":5}]', '$[0]')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_type('[null,1,2.1,"three",{"four":5}]', '$[3]')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_valid('')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT json_valid('"a"')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT julianday('2017-01-02T03:04:05')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT julianday('2017-01-02T03:04:05', '+1 minute')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT julianday(1491341842, 'unixepoch')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT leftstr('abc', 1)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT leftstr('abc', 10)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT length('abc')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT like('%b%', 'aabcc')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT like('%b:%', 'aab%', ':')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT log(8)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT log10(100)
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT logfmt2json('foo=1 bar=2 name="Rolo Tomassi"')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT lower('AbC')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT ltrim('   abc')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.885 I t0 command_executor.cc:312 Executing SQL: SELECT ltrim('aaaabbbc', 'ab')
+2024-07-25T22:15:50.885 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT max(2, 1, 3)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT max(status) FROM http_status_codes
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT min(2, 1, 3)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT min(status) FROM http_status_codes
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT nullif(1, 1)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT nullif(1, 2)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT padc('abc', 6) || 'def'
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT padc('abcdef', 8) || 'ghi'
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT padl('abc', 6)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT padl('abcdef', 4)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT padr('abc', 6) || 'def'
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT padr('abcdef', 4) || 'ghi'
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT parse_url('https://example.com/search?q=hello%20world')
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT parse_url('https://alice@[fe80::14ff:4ee5:1215:2fb2]')
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT pi()
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT power(2, 3)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT printf('Hello, %s!', 'World')
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT printf('align: % 10s', 'small')
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT printf('value: %05d', 11)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT proper('hello, world!')
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT quote('abc')
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT quote('abc''123')
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT radians(180)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT ifnull($val, raise_error('please set $val', 'because'))
+2024-07-25T22:15:50.886 E t0 sql_util.cc:552 (1) statement aborts at 3: [SELECT ifnull($val, raise_error('please set $val', 'because'))] lnav-error:{"level":"error","message":{"str":"please set $val","attrs":[]},"reason":{"str":"because","attrs":[]},"snippet
+2024-07-25T22:15:50.886 E t0 command_executor.cc:443 sqlite3_step error code: 1
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT * FROM regexp_capture('a=1; b=2', '(\w+)=(\d+)')
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT * FROM regexp_capture_into_json('a=1; b=2', '(\w+)=(\d+)')
+2024-07-25T22:15:50.886 D t0 column_namer.cc:109 column name already exists (col), trying (col_0)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT regexp_match('(\d+)', '123')
+2024-07-25T22:15:50.886 D t0 column_namer.cc:109 column name already exists (col), trying (col_0)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT regexp_match('(\d+) (\w+)', '123 four')
+2024-07-25T22:15:50.886 D t0 column_namer.cc:109 column name already exists (col), trying (col_0)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT regexp_match('(?<num>\d+) (?<str>\w+)', '123 four')
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT regexp_replace('Hello, World!', '^(\w+)', 'Goodbye')
+2024-07-25T22:15:50.886 D t0 column_namer.cc:109 column name already exists (col), trying (col_0)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT regexp_replace('123 abc', '(\w+)', '<\1>')
+2024-07-25T22:15:50.886 D t0 column_namer.cc:109 column name already exists (col), trying (col_0)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT replace('abc', 'x', 'z')
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT replace('abc', 'a', 'z')
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT replicate('abc', 3)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT reverse('abc')
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT rightstr('abc', 1)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT rightstr('abc', 10)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT round(123.456)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT round(123.456, 1)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT round(123.456, 5)
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.886 I t0 command_executor.cc:312 Executing SQL: SELECT row_number() OVER (PARTITION BY ex_procname ORDER BY log_line) AS msg_num, ex_procname, log_body FROM lnav_example_log
+2024-07-25T22:15:50.886 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT rtrim('abc   ')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT rtrim('abbbbcccc', 'bc')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT sign(10)
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT sign(0)
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT sign(-10)
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT sparkline(32, 128)
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT sparkline(value) FROM json_each('[0, 1, 2, 3, 4, 5, 6, 7, 8]')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT spooky_hash('Hello, World!')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT spooky_hash('Hello, World!', NULL)
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT spooky_hash('Hello, World!', '')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT spooky_hash('Hello, World!', 123)
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT sqlite_compileoption_used('ENABLE_FTS3')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT square(2)
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT startswith('foobar', 'foo')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT startswith('foobar', 'bar')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT strfilter('abcabc', 'bcd')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT strftime('%Y', '2017-01-02T03:04:05')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT strftime('The time is: %H:%M:%S', '2017-01-02T03:04:05', '+1 minute')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT strftime('Julian day: %J', 1491341842, 'unixepoch')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT substr('abc', 2)
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT substr('abc', 2, 1)
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT substr('abc', -1)
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT substr('abc', -1, -1)
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT sum(ex_duration) FROM lnav_example_log
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT time('2017-01-02T03:04:05')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT time('2017-01-02T03:04:05', '+1 minute')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT time(1491341842, 'unixepoch')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT timediff('2017-02-03T04:05:06', '2017-02-03T04:05:00')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT timediff('today', 'yesterday')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT timeslice('2017-01-01T05:05:00', '10m')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT timeslice(log_time_msecs, '5m') AS slice, count(1)
+    FROM lnav_example_log GROUP BY slice
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT timeslice(log_time_msecs, 'before 4:30am') AS slice, count(1) FROM lnav_example_log GROUP BY slice
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT timezone('America/Los_Angeles', '2022-03-02T10:00')
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.887 I t0 command_executor.cc:312 Executing SQL: SELECT total(ex_duration) FROM lnav_example_log
+2024-07-25T22:15:50.887 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.888 I t0 command_executor.cc:312 Executing SQL: SELECT trim('    abc   ')
+2024-07-25T22:15:50.888 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.888 I t0 command_executor.cc:312 Executing SQL: SELECT trim('-+abc+-', '-+')
+2024-07-25T22:15:50.888 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.888 I t0 command_executor.cc:312 Executing SQL: SELECT typeof(1)
+2024-07-25T22:15:50.888 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.888 I t0 command_executor.cc:312 Executing SQL: SELECT typeof('abc')
+2024-07-25T22:15:50.888 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.888 I t0 command_executor.cc:312 Executing SQL: SELECT unicode('abc')
+2024-07-25T22:15:50.888 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.888 I t0 command_executor.cc:312 Executing SQL: SELECT unparse_url('{"scheme": "https", "host": "example.com"}')
+2024-07-25T22:15:50.888 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.888 I t0 command_executor.cc:312 Executing SQL: SELECT upper('aBc')
+2024-07-25T22:15:50.888 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.888 I t0 command_executor.cc:312 Executing SQL: SELECT * FROM xpath('/abc/def', '<abc><def a="b">Hello</def><def>Bye</def></abc>')
+2024-07-25T22:15:50.888 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.888 I t0 command_executor.cc:312 Executing SQL: SELECT * FROM xpath('/abc/def/@a', '<abc><def a="b">Hello</def><def>Bye</def></abc>')
+2024-07-25T22:15:50.888 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.888 I t0 command_executor.cc:312 Executing SQL: SELECT * FROM xpath('/abc/def/text()', '<abc><def a="b">Hello &#x2605;</def></abc>')
+2024-07-25T22:15:50.888 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.888 I t0 command_executor.cc:312 Executing SQL: SELECT yaml_to_json('abc: def')
+2024-07-25T22:15:50.888 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{s='Hello'}] | select { s=text.contains 'lo' s }
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{s='Goodbye'}] | select { s=text.contains 'lo' s }
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{s='Hello'}] | select { s=text.ends_with 'lo' s }
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{s='Goodbye'}] | select { s=text.ends_with 'lo' s }
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{s='Hello, World!'}] | select { s=text.extract 1 5 s }
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{s='Hello, World!'}] | select { s=text.length s }
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{s='HELLO'}] | select { s=text.lower s }
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{s='  HELLO  '}] | select { s=text.ltrim s }
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{s='foobar'}] | select { s=text.replace 'foo' '' s }
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{s='  HELLO  '}] | select { s=text.rtrim s }
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{s='Hello'}] | select { s=text.starts_with 'He' s }
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{s='Goodbye'}] | select { s=text.starts_with 'He' s }
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{s='  HELLO  '}] | select { s=text.trim s }
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{s='hello'}] | select { s=text.upper s }
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{a=1}, {a=2}] | aggregate { arr = json.group_array a }
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{a=1}, {a=2}] | derive b = a * 2
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{a=1}, {a=2}] | filter a > 1
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from http_status_codes | take 3
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{ col1=1, col2='abc' }, { col1=2, col2='def' }]
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from lnav_example_log | group { log_level } (aggregate { count this })
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{a=1, b='abc'}, {a=2, b='def'}] | select b
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{a=1}, {a=2}] | select b = a * 2
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{a=1}, {a=2}] | sort {-a}
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{a=1}, {a=1}, {a=2}] | stats.average_of a
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{a=1, b=1}, {a=1, b=1}, {a=2, b=1}] | stats.by a {sum b}
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{a=1}, {a=1}, {a=2}] | stats.count_by a
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from lnav_example_log | stats.hist ex_procname
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{a=1}, {a=1}, {a=2}] | stats.sum_of a
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{a=1}, {a=2}, {a=3}] | take 1
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{a=1}, {a=2}, {a=3}] | take 2..3
+2024-07-25T22:15:50.888 I t0 command_executor.cc:267 compiling PRQL: from [{a=1}, {a=1}, {a=2}] | utils.distinct a
+2024-07-25T22:15:50.888 I t0 command_executor.cc:657 Executing file: /Users/jean/.config/lnav/session
+2024-07-25T22:15:50.888 D t0 log_format_loader.cc:1596 Searching for script in path: /etc/lnav/formats/*/*.lnav
+2024-07-25T22:15:50.888 D t0 log_format_loader.cc:1596 Searching for script in path: /etc/lnav/configs/*/*.lnav
+2024-07-25T22:15:50.888 D t0 log_format_loader.cc:1596 Searching for script in path: /opt/homebrew/Cellar/lnav/0.12.2/etc/lnav/formats/*/*.lnav
+2024-07-25T22:15:50.888 D t0 log_format_loader.cc:1596 Searching for script in path: /opt/homebrew/Cellar/lnav/0.12.2/etc/lnav/configs/*/*.lnav
+2024-07-25T22:15:50.888 D t0 log_format_loader.cc:1596 Searching for script in path: /Users/jean/.config/lnav/formats/*/*.lnav
+2024-07-25T22:15:50.889 D t0 log_format_loader.cc:1608   found script: /Users/jean/.config/lnav/formats/default/dhclient-summary.lnav
+2024-07-25T22:15:50.889 D t0 log_format_loader.cc:1608   found script: /Users/jean/.config/lnav/formats/default/docker-url-handler.lnav
+2024-07-25T22:15:50.889 D t0 log_format_loader.cc:1608   found script: /Users/jean/.config/lnav/formats/default/journald-url-handler.lnav
+2024-07-25T22:15:50.889 D t0 log_format_loader.cc:1608   found script: /Users/jean/.config/lnav/formats/default/lnav-copy-text.lnav
+2024-07-25T22:15:50.889 D t0 log_format_loader.cc:1608   found script: /Users/jean/.config/lnav/formats/default/lnav-pop-view.lnav
+2024-07-25T22:15:50.889 D t0 log_format_loader.cc:1608   found script: /Users/jean/.config/lnav/formats/default/partition-by-boot.lnav
+2024-07-25T22:15:50.890 D t0 log_format_loader.cc:1608   found script: /Users/jean/.config/lnav/formats/default/piper-url-handler.lnav
+2024-07-25T22:15:50.890 D t0 log_format_loader.cc:1608   found script: /Users/jean/.config/lnav/formats/default/rename-stdin.lnav
+2024-07-25T22:15:50.890 D t0 log_format_loader.cc:1608   found script: /Users/jean/.config/lnav/formats/default/search-for.lnav
+2024-07-25T22:15:50.890 D t0 log_format_loader.cc:1596 Searching for script in path: /Users/jean/.config/lnav/configs/*/*.lnav
+2024-07-25T22:15:50.890 D t0 lnav.cc:1508 rescan started
+2024-07-25T22:15:50.890 I t5 file_collection.cc:104 fd limit: 256; open file limit: 224
+2024-07-25T22:15:50.890 D t0 lnav.cc:1549 initial rescan rebuild
+2024-07-25T22:15:50.890 D t0 logfile_sub_source.cc:897 expanding index capacity 100000
+2024-07-25T22:15:50.890 D t0 logfile_sub_source.cc:1221 redoing search
+2024-07-25T22:15:50.890 I t0 session_data.cc:901 BEGIN load_session
+2024-07-25T22:15:50.890 I t0 session_data.cc:432 loading bookmark db: /Users/jean/.config/lnav/log_metadata.db
+2024-07-25T22:15:50.891 E t0 sql_util.cc:552 (1) duplicate column name: comment in "ALTER TABLE bookmarks ADD COLUMN comment text DEFAULT '';"
+2024-07-25T22:15:50.891 E t0 session_data.cc:446 unable to upgrade bookmark table -- (1/1) duplicate column name: comment
+2024-07-25T22:15:50.891 E t0 sql_util.cc:552 (1) duplicate column name: tags in "ALTER TABLE bookmarks ADD COLUMN tags text DEFAULT '';"
+2024-07-25T22:15:50.891 E t0 session_data.cc:446 unable to upgrade bookmark table -- (1/1) duplicate column name: tags
+2024-07-25T22:15:50.891 E t0 sql_util.cc:552 (1) duplicate column name: annotations in "ALTER TABLE bookmarks ADD COLUMN annotations text DEFAULT NULL;"
+2024-07-25T22:15:50.891 E t0 session_data.cc:446 unable to upgrade bookmark table -- (1/1) duplicate column name: annotations
+2024-07-25T22:15:50.891 I t0 session_data.cc:984 END load_session
+2024-07-25T22:15:50.891 D t0 lnav.cc:1572 file count 0
+2024-07-25T22:15:51.042 I t1 piper.looper.cc:346 creating capturing file: stdin -- /var/folders/v5/637vmkcn6q3_pwv3jpsgx9pw0000gn/T/lnav-user-501-work/piper/p-85912ab45138c24379a5dc8474b07acf-000/out.0
+2024-07-25T22:15:51.047 D t6 archive_manager.cc:91 read open /private/var/folders/v5/637vmkcn6q3_pwv3jpsgx9pw0000gn/T/lnav-user-501-work/piper/p-85912ab45138c24379a5dc8474b07acf-000/out.0
+2024-07-25T22:15:51.047 D t6 archive_manager.cc:98 read next header (null) /private/var/folders/v5/637vmkcn6q3_pwv3jpsgx9pw0000gn/T/lnav-user-501-work/piper/p-85912ab45138c24379a5dc8474b07acf-000/out.0
+2024-07-25T22:15:51.047 D t6 archive_manager.cc:100 read next done /private/var/folders/v5/637vmkcn6q3_pwv3jpsgx9pw0000gn/T/lnav-user-501-work/piper/p-85912ab45138c24379a5dc8474b07acf-000/out.0
+2024-07-25T22:15:51.047 I t6 file_collection.cc:531 loading new file: filename=/private/var/folders/v5/637vmkcn6q3_pwv3jpsgx9pw0000gn/T/lnav-user-501-work/piper/p-85912ab45138c24379a5dc8474b07acf-000/out.0
+2024-07-25T22:15:51.047 I t6 logfile.cc:127 Creating logfile: fd=16; size=4846; mtime=1721956551; filename=/private/var/folders/v5/637vmkcn6q3_pwv3jpsgx9pw0000gn/T/lnav-user-501-work/piper/p-85912ab45138c24379a5dc8474b07acf-000/out.0
+2024-07-25T22:15:51.047 I t6 logfile.cc:129   actual_path=/private/var/folders/v5/637vmkcn6q3_pwv3jpsgx9pw0000gn/T/lnav-user-501-work/piper/p-85912ab45138c24379a5dc8474b07acf-000/out.0
+2024-07-25T22:15:51.047 I t6 logfile.cc:147 stdin: has header 1
+2024-07-25T22:15:51.047 D t6 logfile.cc:162 setting file name: stdin
+2024-07-25T22:15:51.067 D t0 logfile.cc:660 scanning file... stdin
+2024-07-25T22:15:51.067 D t0 logfile.cc:729 loading file... stdin:0
+2024-07-25T22:15:51.067 D t0 logfile.cc:820 setting text format to text/plain
+2024-07-25T22:15:51.067 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:15:51.067 I t0 textfile_sub_source.cc:911 generating metadata for: stdin (size=4846)
+2024-07-25T22:15:51.067 D t0 lnav.cc:1895 initial build completed
+2024-07-25T22:15:51.068 I t0 command_executor.cc:869 Executing initial commands
+2024-07-25T22:15:51.068 I t0 command_executor.cc:1246 redirecting command output to: tmp
+2024-07-25T22:15:51.068 I t0 command_executor.cc:1142 redirecting command output to screen
+2024-07-25T22:15:51.068 D t7 archive_manager.cc:407 cache-ttl 172800
+2024-07-25T22:15:51.068 D t8 tailer.looper.cc:1177 cache-ttl 172800
+2024-07-25T22:15:51.069 D t0 session_data.cc:1760 restoring view states
+2024-07-25T22:15:51.069 I t0 session_data.cc:1792 restoring text view top: 0
+2024-07-25T22:15:51.069 I t0 session_data.cc:1792 restoring help view top: 0
+2024-07-25T22:15:51.069 I t0 session_data.cc:1792 restoring histogram view top: 0
+2024-07-25T22:15:51.069 I t0 session_data.cc:1792 restoring db view top: 0
+2024-07-25T22:15:51.069 I t0 session_data.cc:1792 restoring schema view top: 0
+2024-07-25T22:15:51.069 I t0 session_data.cc:1792 restoring pretty view top: 0
+2024-07-25T22:15:51.069 I t0 session_data.cc:1792 restoring spectro view top: 0
+2024-07-25T22:15:51.069 I t0 session_data.cc:1792 restoring gantt view top: 0
+2024-07-25T22:15:51.069 D t0 lnav.cc:1944 no logs, just text...
+2024-07-25T22:15:51.069 I t0 lnav.cc:1953 switching to paging!
+2024-07-25T22:15:51.069 I t0 logfile.cc:1388 line buffer stats for file: stdin
+2024-07-25T22:15:51.069 I t0 logfile.cc:1389   file_size=-1
+2024-07-25T22:15:51.069 I t0 logfile.cc:1390   buffer_size=224
+2024-07-25T22:15:51.069 I t0 logfile.cc:1401   read_hist=[   0    0    0    0    0    0    0    0    0    0]
+2024-07-25T22:15:51.069 I t0 logfile.cc:1402   decompressions=0
+2024-07-25T22:15:51.069 I t0 logfile.cc:1403   preads=3
+2024-07-25T22:15:51.069 I t0 logfile.cc:1404   requested_preloads=0
+2024-07-25T22:15:51.069 I t0 logfile.cc:1405   used_preloads=0
+2024-07-25T22:15:51.069 I t0 session_data.cc:432 loading bookmark db: /Users/jean/.config/lnav/log_metadata.db
+2024-07-25T22:15:51.069 E t0 sql_util.cc:552 (1) duplicate column name: comment in "ALTER TABLE bookmarks ADD COLUMN comment text DEFAULT '';"
+2024-07-25T22:15:51.069 E t0 session_data.cc:446 unable to upgrade bookmark table -- (1/1) duplicate column name: comment
+2024-07-25T22:15:51.069 E t0 sql_util.cc:552 (1) duplicate column name: tags in "ALTER TABLE bookmarks ADD COLUMN tags text DEFAULT '';"
+2024-07-25T22:15:51.069 E t0 session_data.cc:446 unable to upgrade bookmark table -- (1/1) duplicate column name: tags
+2024-07-25T22:15:51.069 E t0 sql_util.cc:552 (1) duplicate column name: annotations in "ALTER TABLE bookmarks ADD COLUMN annotations text DEFAULT NULL;"
+2024-07-25T22:15:51.069 E t0 session_data.cc:446 unable to upgrade bookmark table -- (1/1) duplicate column name: annotations
+2024-07-25T22:15:51.623 D t0 logfile.cc:683 flushing at 4750
+2024-07-25T22:15:51.623 D t0 logfile.cc:729 loading file... stdin:4
+2024-07-25T22:15:51.624 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:15:51.627 D t0 textfile_sub_source.cc:897 text file has changed, invalidating metadata.  old: {mtime: 1721956551 size: 4846}, new: {mtime: 1721956551 size: 5285}
+2024-07-25T22:15:51.627 I t0 textfile_sub_source.cc:911 generating metadata for: stdin (size=5285)
+2024-07-25T22:15:54.776 D t0 logfile.cc:683 flushing at 5207
+2024-07-25T22:15:54.777 D t0 logfile.cc:729 loading file... stdin:12
+2024-07-25T22:15:54.781 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:15:54.790 D t0 textfile_sub_source.cc:897 text file has changed, invalidating metadata.  old: {mtime: 1721956551 size: 5285}, new: {mtime: 1721956554 size: 6047}
+2024-07-25T22:15:54.790 I t0 textfile_sub_source.cc:911 generating metadata for: stdin (size=6047)
+2024-07-25T22:16:05.284 D t0 logfile.cc:683 flushing at 5628
+2024-07-25T22:16:05.284 D t0 logfile.cc:729 loading file... stdin:17
+2024-07-25T22:16:05.285 D t0 log_format.cc:1320 Unable to parse line at offset 6047: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.285 D t0 log_format.cc:1320 Unable to parse line at offset 6047: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.285 D t0 log_format.cc:1320 Unable to parse line at offset 6047: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.285 D t0 log_format.cc:1320 Unable to parse line at offset 6047: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.286 D t0 log_format.cc:1320 Unable to parse line at offset 6047: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.286 D t0 log_format.cc:1320 Unable to parse line at offset 6047: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.286 D t0 log_format.cc:1320 Unable to parse line at offset 6047: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.286 D t0 log_format.cc:1320 Unable to parse line at offset 6119: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.286 D t0 log_format.cc:1320 Unable to parse line at offset 6119: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.286 D t0 log_format.cc:1320 Unable to parse line at offset 6119: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.286 D t0 log_format.cc:1320 Unable to parse line at offset 6119: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.286 D t0 log_format.cc:1320 Unable to parse line at offset 6119: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.286 D t0 log_format.cc:1320 Unable to parse line at offset 6119: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.286 D t0 log_format.cc:1320 Unable to parse line at offset 6119: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.286 D t0 log_format.cc:1320 Unable to parse line at offset 6191: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.286 D t0 log_format.cc:1320 Unable to parse line at offset 6191: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.286 D t0 log_format.cc:1320 Unable to parse line at offset 6191: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.287 D t0 log_format.cc:1320 Unable to parse line at offset 6191: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.287 D t0 log_format.cc:1320 Unable to parse line at offset 6191: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.287 D t0 log_format.cc:1320 Unable to parse line at offset 6191: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.287 D t0 log_format.cc:1320 Unable to parse line at offset 6191: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:05.288 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:05.292 D t0 textfile_sub_source.cc:897 text file has changed, invalidating metadata.  old: {mtime: 1721956554 size: 6047}, new: {mtime: 1721956565 size: 6263}
+2024-07-25T22:16:05.292 I t0 textfile_sub_source.cc:911 generating metadata for: stdin (size=6263)
+2024-07-25T22:16:15.423 D t0 logfile.cc:683 flushing at 6119
+2024-07-25T22:16:15.423 D t0 logfile.cc:729 loading file... stdin:20
+2024-07-25T22:16:15.423 D t0 log_format.cc:1320 Unable to parse line at offset 6191: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:15.423 D t0 log_format.cc:1320 Unable to parse line at offset 6191: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:15.423 D t0 log_format.cc:1320 Unable to parse line at offset 6191: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:15.423 D t0 log_format.cc:1320 Unable to parse line at offset 6191: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:15.423 D t0 log_format.cc:1320 Unable to parse line at offset 6191: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:15.423 D t0 log_format.cc:1320 Unable to parse line at offset 6191: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:15.423 D t0 log_format.cc:1320 Unable to parse line at offset 6191: lexical error: invalid char in json text.
+                                     { event: 'up', message: 'applied 
+                     (right here) ------^
+
+2024-07-25T22:16:15.423 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:15.424 D t0 textfile_sub_source.cc:897 text file has changed, invalidating metadata.  old: {mtime: 1721956565 size: 6263}, new: {mtime: 1721956575 size: 6513}
+2024-07-25T22:16:15.424 I t0 textfile_sub_source.cc:911 generating metadata for: stdin (size=6513)
+2024-07-25T22:16:15.773 D t0 logfile.cc:683 flushing at 6388
+2024-07-25T22:16:15.773 D t0 logfile.cc:729 loading file... stdin:24
+2024-07-25T22:16:15.774 I t0 logfile.cc:372   scan with format (generic_log) matched with quality (0)
+2024-07-25T22:16:15.774 I t0 logfile.cc:416 stdin:28:log format found -- generic_log
+2024-07-25T22:16:15.774 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:15.774 I t0 lnav.indexing.cc:147 promoting text file to log file: stdin (f1e1e7e926b008ab032cc89be8b98430)
+2024-07-25T22:16:15.774 D t0 logfile_sub_source.cc:770 forced to full rebuild
+2024-07-25T22:16:15.774 D t0 logfile.cc:683 flushing at 6559
+2024-07-25T22:16:15.774 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:15.774 D t0 logfile_sub_source.cc:830 new lines for stdin:29
+2024-07-25T22:16:15.774 D t0 logfile_sub_source.cc:1221 redoing search
+2024-07-25T22:16:16.123 D t0 logfile.cc:683 flushing at 6604
+2024-07-25T22:16:16.124 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:16.124 D t0 logfile_sub_source.cc:830 new lines for stdin:31
+2024-07-25T22:16:16.473 D t0 logfile.cc:683 flushing at 6698
+2024-07-25T22:16:16.474 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:16.474 D t0 logfile_sub_source.cc:830 new lines for stdin:35
+2024-07-25T22:16:16.823 D t0 logfile.cc:683 flushing at 6931
+2024-07-25T22:16:16.823 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:16.823 D t0 logfile_sub_source.cc:830 new lines for stdin:39
+2024-07-25T22:16:18.923 D t0 logfile.cc:683 flushing at 7122
+2024-07-25T22:16:18.923 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:18.923 D t0 logfile_sub_source.cc:830 new lines for stdin:40
+2024-07-25T22:16:19.273 D t0 logfile.cc:683 flushing at 7250
+2024-07-25T22:16:19.273 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:19.273 D t0 logfile_sub_source.cc:830 new lines for stdin:44
+2024-07-25T22:16:19.623 D t0 logfile.cc:683 flushing at 7463
+2024-07-25T22:16:19.624 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:19.624 D t0 logfile_sub_source.cc:830 new lines for stdin:48
+2024-07-25T22:16:19.974 D t0 logfile.cc:683 flushing at 7671
+2024-07-25T22:16:19.974 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:19.974 D t0 logfile_sub_source.cc:830 new lines for stdin:52
+2024-07-25T22:16:20.674 D t0 logfile.cc:683 flushing at 7907
+2024-07-25T22:16:20.674 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:20.674 D t0 logfile_sub_source.cc:830 new lines for stdin:54
+2024-07-25T22:16:23.823 D t0 logfile.cc:683 flushing at 7984
+2024-07-25T22:16:23.824 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:23.824 D t0 logfile_sub_source.cc:830 new lines for stdin:73
+2024-07-25T22:16:24.873 D t0 logfile.cc:683 flushing at 11638
+2024-07-25T22:16:24.874 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:24.874 D t0 logfile_sub_source.cc:830 new lines for stdin:74
+2024-07-25T22:16:25.929 D t0 logfile.cc:683 flushing at 11844
+2024-07-25T22:16:25.929 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:25.929 D t0 logfile_sub_source.cc:830 new lines for stdin:75
+2024-07-25T22:16:26.625 D t0 logfile.cc:683 flushing at 11904
+2024-07-25T22:16:26.626 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:26.626 D t0 logfile_sub_source.cc:830 new lines for stdin:76
+2024-07-25T22:16:27.724 D t0 logfile.cc:683 flushing at 12182
+2024-07-25T22:16:27.725 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:27.725 D t0 logfile_sub_source.cc:830 new lines for stdin:77
+2024-07-25T22:16:28.836 D t0 logfile.cc:683 flushing at 12460
+2024-07-25T22:16:28.837 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:28.837 D t0 logfile_sub_source.cc:830 new lines for stdin:78
+2024-07-25T22:16:29.937 D t0 logfile.cc:683 flushing at 12738
+2024-07-25T22:16:29.939 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:29.939 D t0 logfile_sub_source.cc:830 new lines for stdin:79
+2024-07-25T22:16:30.686 D t0 logfile.cc:683 flushing at 13016
+2024-07-25T22:16:30.687 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:30.687 D t0 logfile_sub_source.cc:830 new lines for stdin:80
+2024-07-25T22:16:31.795 D t0 logfile.cc:683 flushing at 13294
+2024-07-25T22:16:31.795 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:31.795 D t0 logfile_sub_source.cc:830 new lines for stdin:81
+2024-07-25T22:16:32.845 D t0 logfile.cc:683 flushing at 13570
+2024-07-25T22:16:32.846 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:32.846 D t0 logfile_sub_source.cc:830 new lines for stdin:82
+2024-07-25T22:16:33.924 D t0 logfile.cc:683 flushing at 13848
+2024-07-25T22:16:33.925 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:33.925 D t0 logfile_sub_source.cc:830 new lines for stdin:85
+2024-07-25T22:16:34.672 D t0 logfile.cc:683 flushing at 14691
+2024-07-25T22:16:34.673 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:34.673 D t0 logfile_sub_source.cc:830 new lines for stdin:86
+2024-07-25T22:16:35.025 D t0 logfile.cc:683 flushing at 15138
+2024-07-25T22:16:35.025 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:35.025 D t0 logfile_sub_source.cc:830 new lines for stdin:89
+2024-07-25T22:16:35.724 D t0 logfile.cc:683 flushing at 15983
+2024-07-25T22:16:35.725 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:35.725 D t0 logfile_sub_source.cc:830 new lines for stdin:93
+2024-07-25T22:16:36.727 D t0 hotkeys.cc:170 executing key sequence x3b: :prompt sql
+2024-07-25T22:16:36.727 I t0 command_executor.cc:117 Executing: prompt sql
+2024-07-25T22:16:36.727 D t0 log_vtab_impl.cc:360 creating log format table: logline = 0x0
+2024-07-25T22:16:36.728 W t0 log_data_helper.cc:67 failed to parse line 92
+2024-07-25T22:16:36.740 W t0 log_data_helper.cc:67 failed to parse line 92
+2024-07-25T22:16:41.305 I t0 command_executor.cc:312 Executing SQL: select * from clutch;
+2024-07-25T22:16:41.305 I t0 log_vtab_impl.cc:1773 vt_best_index(clutch, nConstraint=0)
+2024-07-25T22:16:41.305 I t0 line_buffer.cc:1387 16: skipping cache request (compressed=0 already-cached=0)
+2024-07-25T22:16:41.306 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:16:41.306 I t0 logfile.cc:1388 line buffer stats for file: stdin
+2024-07-25T22:16:41.306 I t0 logfile.cc:1389   file_size=-1
+2024-07-25T22:16:41.306 I t0 logfile.cc:1390   buffer_size=11675
+2024-07-25T22:16:41.306 I t0 logfile.cc:1401   read_hist=[   0    0    0    0    0    0    0    0    0    0]
+2024-07-25T22:16:41.306 I t0 logfile.cc:1402   decompressions=0
+2024-07-25T22:16:41.306 I t0 logfile.cc:1403   preads=109
+2024-07-25T22:16:41.306 I t0 logfile.cc:1404   requested_preloads=0
+2024-07-25T22:16:41.306 I t0 logfile.cc:1405   used_preloads=0
+2024-07-25T22:16:41.417 D t0 logfile.cc:683 flushing at 17479
+2024-07-25T22:16:41.417 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:41.417 D t0 logfile_sub_source.cc:830 new lines for stdin:114
+2024-07-25T22:16:41.777 D t0 logfile.cc:683 flushing at 25193
+2024-07-25T22:16:41.777 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:41.777 D t0 logfile_sub_source.cc:830 new lines for stdin:118
+2024-07-25T22:16:42.880 D t0 logfile.cc:683 flushing at 26683
+2024-07-25T22:16:42.881 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:42.881 D t0 logfile_sub_source.cc:830 new lines for stdin:122
+2024-07-25T22:16:43.630 D t0 logfile.cc:683 flushing at 28171
+2024-07-25T22:16:43.631 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:43.631 D t0 logfile_sub_source.cc:830 new lines for stdin:125
+2024-07-25T22:16:43.651 D t0 logfile.cc:683 flushing at 29372
+2024-07-25T22:16:43.651 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:43.651 D t0 logfile_sub_source.cc:830 new lines for stdin:126
+2024-07-25T22:16:43.665 D t0 logfile.cc:683 flushing at 29659
+2024-07-25T22:16:43.665 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:43.665 D t0 logfile_sub_source.cc:830 new lines for stdin:129
+2024-07-25T22:16:44.730 D t0 logfile.cc:683 flushing at 30673
+2024-07-25T22:16:44.731 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:44.731 D t0 logfile_sub_source.cc:830 new lines for stdin:133
+2024-07-25T22:16:45.824 D t0 logfile.cc:683 flushing at 32163
+2024-07-25T22:16:45.824 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:45.824 D t0 logfile_sub_source.cc:830 new lines for stdin:137
+2024-07-25T22:16:46.829 D t0 hotkeys.cc:170 executing key sequence x3b: :prompt sql
+2024-07-25T22:16:46.829 I t0 command_executor.cc:117 Executing: prompt sql
+2024-07-25T22:16:46.829 D t0 log_vtab_impl.cc:360 creating log format table: logline = 0x0
+2024-07-25T22:16:46.831 W t0 log_data_helper.cc:67 failed to parse line 136
+2024-07-25T22:16:46.841 W t0 log_data_helper.cc:67 failed to parse line 136
+2024-07-25T22:16:48.024 I t0 log_vtab_impl.cc:1773 vt_best_index(clutch, nConstraint=0)
+2024-07-25T22:16:48.025 W t0 log_data_helper.cc:67 failed to parse line 136
+2024-07-25T22:16:54.603 I t0 command_executor.cc:312 Executing SQL: SELECT * FROM clutch;
+2024-07-25T22:16:54.603 I t0 log_vtab_impl.cc:1773 vt_best_index(clutch, nConstraint=0)
+2024-07-25T22:16:54.603 I t0 line_buffer.cc:1387 16: skipping cache request (compressed=0 already-cached=0)
+2024-07-25T22:16:54.603 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:16:54.603 I t0 logfile.cc:1388 line buffer stats for file: stdin
+2024-07-25T22:16:54.603 I t0 logfile.cc:1389   file_size=-1
+2024-07-25T22:16:54.603 I t0 logfile.cc:1390   buffer_size=27855
+2024-07-25T22:16:54.603 I t0 logfile.cc:1401   read_hist=[   0    0    0    0    0    0    0    0    0    0]
+2024-07-25T22:16:54.603 I t0 logfile.cc:1402   decompressions=0
+2024-07-25T22:16:54.603 I t0 logfile.cc:1403   preads=40
+2024-07-25T22:16:54.603 I t0 logfile.cc:1404   requested_preloads=0
+2024-07-25T22:16:54.603 I t0 logfile.cc:1405   used_preloads=0
+2024-07-25T22:16:54.717 D t0 logfile.cc:683 flushing at 33653
+2024-07-25T22:16:54.718 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:54.718 D t0 logfile_sub_source.cc:830 new lines for stdin:184
+2024-07-25T22:16:55.824 D t0 logfile.cc:683 flushing at 51050
+2024-07-25T22:16:55.825 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:55.825 D t0 logfile_sub_source.cc:830 new lines for stdin:188
+2024-07-25T22:16:56.927 D t0 logfile.cc:683 flushing at 52540
+2024-07-25T22:16:56.929 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:56.929 D t0 logfile_sub_source.cc:830 new lines for stdin:192
+2024-07-25T22:16:57.677 D t0 logfile.cc:683 flushing at 54028
+2024-07-25T22:16:57.677 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:57.677 D t0 logfile_sub_source.cc:830 new lines for stdin:193
+2024-07-25T22:16:57.704 D t0 logfile.cc:683 flushing at 54312
+2024-07-25T22:16:57.705 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:57.705 D t0 logfile_sub_source.cc:830 new lines for stdin:196
+2024-07-25T22:16:58.774 D t0 logfile.cc:683 flushing at 55518
+2024-07-25T22:16:58.774 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:58.774 D t0 logfile_sub_source.cc:830 new lines for stdin:200
+2024-07-25T22:16:59.874 D t0 logfile.cc:683 flushing at 57008
+2024-07-25T22:16:59.874 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:16:59.875 D t0 logfile_sub_source.cc:830 new lines for stdin:204
+2024-07-25T22:17:00.975 D t0 logfile.cc:683 flushing at 58498
+2024-07-25T22:17:00.975 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:00.975 D t0 logfile_sub_source.cc:830 new lines for stdin:208
+2024-07-25T22:17:01.725 D t0 logfile.cc:683 flushing at 59994
+2024-07-25T22:17:01.726 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:01.726 D t0 logfile_sub_source.cc:830 new lines for stdin:212
+2024-07-25T22:17:02.824 D t0 logfile.cc:683 flushing at 61472
+2024-07-25T22:17:02.824 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:02.824 D t0 logfile_sub_source.cc:830 new lines for stdin:216
+2024-07-25T22:17:03.958 D t0 logfile.cc:683 flushing at 62958
+2024-07-25T22:17:03.971 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:03.971 D t0 logfile_sub_source.cc:830 new lines for stdin:232
+2024-07-25T22:17:04.826 D t0 logfile.cc:683 flushing at 69091
+2024-07-25T22:17:04.827 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:04.827 D t0 logfile_sub_source.cc:830 new lines for stdin:236
+2024-07-25T22:17:05.925 D t0 logfile.cc:683 flushing at 70581
+2024-07-25T22:17:05.926 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:05.926 D t0 logfile_sub_source.cc:830 new lines for stdin:240
+2024-07-25T22:17:06.676 D t0 logfile.cc:683 flushing at 72071
+2024-07-25T22:17:06.677 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:06.677 D t0 logfile_sub_source.cc:830 new lines for stdin:241
+2024-07-25T22:17:06.709 D t0 logfile.cc:683 flushing at 72355
+2024-07-25T22:17:06.709 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:06.709 D t0 logfile_sub_source.cc:830 new lines for stdin:244
+2024-07-25T22:17:07.774 D t0 logfile.cc:683 flushing at 73559
+2024-07-25T22:17:07.775 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:07.775 D t0 logfile_sub_source.cc:830 new lines for stdin:248
+2024-07-25T22:17:08.892 D t0 logfile.cc:683 flushing at 75045
+2024-07-25T22:17:08.892 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:08.892 D t0 logfile_sub_source.cc:830 new lines for stdin:253
+2024-07-25T22:17:09.973 D t0 logfile.cc:683 flushing at 76813
+2024-07-25T22:17:09.974 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:09.974 D t0 logfile_sub_source.cc:830 new lines for stdin:257
+2024-07-25T22:17:10.726 D t0 logfile.cc:683 flushing at 78303
+2024-07-25T22:17:10.726 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:10.726 D t0 logfile_sub_source.cc:830 new lines for stdin:261
+2024-07-25T22:17:11.824 D t0 logfile.cc:683 flushing at 79789
+2024-07-25T22:17:11.825 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:11.825 D t0 logfile_sub_source.cc:830 new lines for stdin:265
+2024-07-25T22:17:12.923 D t0 logfile.cc:683 flushing at 81273
+2024-07-25T22:17:12.924 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:12.924 D t0 logfile_sub_source.cc:830 new lines for stdin:269
+2024-07-25T22:17:13.689 D t0 logfile.cc:683 flushing at 82757
+2024-07-25T22:17:13.690 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:13.690 D t0 logfile_sub_source.cc:830 new lines for stdin:278
+2024-07-25T22:17:14.789 D t0 logfile.cc:683 flushing at 86191
+2024-07-25T22:17:14.790 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:14.790 D t0 logfile_sub_source.cc:830 new lines for stdin:282
+2024-07-25T22:17:15.894 D t0 logfile.cc:683 flushing at 87681
+2024-07-25T22:17:15.894 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:15.894 D t0 logfile_sub_source.cc:830 new lines for stdin:286
+2024-07-25T22:17:16.974 D t0 logfile.cc:683 flushing at 89171
+2024-07-25T22:17:16.974 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:16.974 D t0 logfile_sub_source.cc:830 new lines for stdin:290
+2024-07-25T22:17:17.723 D t0 logfile.cc:683 flushing at 90661
+2024-07-25T22:17:17.723 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:17.723 D t0 logfile_sub_source.cc:830 new lines for stdin:294
+2024-07-25T22:17:18.824 D t0 logfile.cc:683 flushing at 92149
+2024-07-25T22:17:18.825 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:18.825 D t0 logfile_sub_source.cc:830 new lines for stdin:301
+2024-07-25T22:17:19.923 D t0 logfile.cc:683 flushing at 94860
+2024-07-25T22:17:19.923 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:19.923 D t0 logfile_sub_source.cc:830 new lines for stdin:305
+2024-07-25T22:17:21.027 D t0 logfile.cc:683 flushing at 96350
+2024-07-25T22:17:21.027 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:21.027 D t0 logfile_sub_source.cc:830 new lines for stdin:309
+2024-07-25T22:17:21.777 D t0 logfile.cc:683 flushing at 97838
+2024-07-25T22:17:21.778 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:21.778 D t0 logfile_sub_source.cc:830 new lines for stdin:313
+2024-07-25T22:17:22.892 D t0 logfile.cc:683 flushing at 99320
+2024-07-25T22:17:22.892 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:22.892 D t0 logfile_sub_source.cc:830 new lines for stdin:317
+2024-07-25T22:17:23.624 D t0 logfile.cc:683 flushing at 100812
+2024-07-25T22:17:23.624 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:23.624 D t0 logfile_sub_source.cc:830 new lines for stdin:325
+2024-07-25T22:17:24.016 D t0 logfile.cc:683 flushing at 103395
+2024-07-25T22:17:24.016 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:24.016 D t0 logfile_sub_source.cc:830 new lines for stdin:329
+2024-07-25T22:17:24.775 D t0 logfile.cc:683 flushing at 104698
+2024-07-25T22:17:24.775 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:24.775 D t0 logfile_sub_source.cc:830 new lines for stdin:333
+2024-07-25T22:17:25.875 D t0 logfile.cc:683 flushing at 106186
+2024-07-25T22:17:25.875 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:25.875 D t0 logfile_sub_source.cc:830 new lines for stdin:337
+2024-07-25T22:17:26.974 D t0 logfile.cc:683 flushing at 107674
+2024-07-25T22:17:26.975 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:26.975 D t0 logfile_sub_source.cc:830 new lines for stdin:341
+2024-07-25T22:17:27.727 D t0 logfile.cc:683 flushing at 109160
+2024-07-25T22:17:27.727 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:27.727 D t0 logfile_sub_source.cc:830 new lines for stdin:345
+2024-07-25T22:17:28.843 D t0 logfile.cc:683 flushing at 110644
+2024-07-25T22:17:28.844 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:28.844 D t0 logfile_sub_source.cc:830 new lines for stdin:349
+2024-07-25T22:17:29.924 D t0 logfile.cc:683 flushing at 112132
+2024-07-25T22:17:29.924 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:29.924 D t0 logfile_sub_source.cc:830 new lines for stdin:353
+2024-07-25T22:17:31.024 D t0 logfile.cc:683 flushing at 113616
+2024-07-25T22:17:31.024 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:31.024 D t0 logfile_sub_source.cc:830 new lines for stdin:357
+2024-07-25T22:17:31.774 D t0 logfile.cc:683 flushing at 115106
+2024-07-25T22:17:31.775 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:31.775 D t0 logfile_sub_source.cc:830 new lines for stdin:361
+2024-07-25T22:17:32.875 D t0 logfile.cc:683 flushing at 116592
+2024-07-25T22:17:32.875 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:32.875 D t0 logfile_sub_source.cc:830 new lines for stdin:365
+2024-07-25T22:17:33.625 D t0 logfile.cc:683 flushing at 118074
+2024-07-25T22:17:33.625 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:33.625 D t0 logfile_sub_source.cc:830 new lines for stdin:367
+2024-07-25T22:17:33.658 D t0 logfile.cc:683 flushing at 118997
+2024-07-25T22:17:33.659 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:33.659 D t0 logfile_sub_source.cc:830 new lines for stdin:385
+2024-07-25T22:17:34.024 D t0 logfile.cc:683 flushing at 126083
+2024-07-25T22:17:34.025 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:34.025 D t0 logfile_sub_source.cc:830 new lines for stdin:389
+2024-07-25T22:17:34.794 D t0 logfile.cc:683 flushing at 127582
+2024-07-25T22:17:34.794 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:34.794 D t0 logfile_sub_source.cc:830 new lines for stdin:393
+2024-07-25T22:17:35.874 D t0 logfile.cc:683 flushing at 129070
+2024-07-25T22:17:35.874 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:35.874 D t0 logfile_sub_source.cc:830 new lines for stdin:397
+2024-07-25T22:17:36.974 D t0 logfile.cc:683 flushing at 130550
+2024-07-25T22:17:36.975 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:36.975 D t0 logfile_sub_source.cc:830 new lines for stdin:401
+2024-07-25T22:17:37.725 D t0 logfile.cc:683 flushing at 132028
+2024-07-25T22:17:37.726 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:37.726 D t0 logfile_sub_source.cc:830 new lines for stdin:405
+2024-07-25T22:17:38.825 D t0 logfile.cc:683 flushing at 133514
+2024-07-25T22:17:38.825 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:38.825 D t0 logfile_sub_source.cc:830 new lines for stdin:410
+2024-07-25T22:17:39.926 D t0 logfile.cc:683 flushing at 135280
+2024-07-25T22:17:39.926 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:39.926 D t0 logfile_sub_source.cc:830 new lines for stdin:414
+2024-07-25T22:17:41.027 D t0 logfile.cc:683 flushing at 136770
+2024-07-25T22:17:41.028 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:41.028 D t0 logfile_sub_source.cc:830 new lines for stdin:418
+2024-07-25T22:17:41.776 D t0 logfile.cc:683 flushing at 138260
+2024-07-25T22:17:41.776 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:41.776 D t0 logfile_sub_source.cc:830 new lines for stdin:422
+2024-07-25T22:17:42.873 D t0 logfile.cc:683 flushing at 139750
+2024-07-25T22:17:42.874 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:42.874 D t0 logfile_sub_source.cc:830 new lines for stdin:426
+2024-07-25T22:17:43.623 D t0 logfile.cc:683 flushing at 141240
+2024-07-25T22:17:43.624 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:43.624 D t0 logfile_sub_source.cc:830 new lines for stdin:429
+2024-07-25T22:17:44.020 D t0 logfile.cc:683 flushing at 142441
+2024-07-25T22:17:44.020 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:44.020 D t0 logfile_sub_source.cc:830 new lines for stdin:433
+2024-07-25T22:17:44.775 D t0 logfile.cc:683 flushing at 143742
+2024-07-25T22:17:44.775 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:44.775 D t0 logfile_sub_source.cc:830 new lines for stdin:437
+2024-07-25T22:17:45.878 D t0 logfile.cc:683 flushing at 145232
+2024-07-25T22:17:45.880 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:45.880 D t0 logfile_sub_source.cc:830 new lines for stdin:441
+2024-07-25T22:17:46.975 D t0 logfile.cc:683 flushing at 146720
+2024-07-25T22:17:46.975 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:46.975 D t0 logfile_sub_source.cc:830 new lines for stdin:445
+2024-07-25T22:17:47.745 D t0 logfile.cc:683 flushing at 148204
+2024-07-25T22:17:47.745 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:47.745 D t0 logfile_sub_source.cc:830 new lines for stdin:449
+2024-07-25T22:17:48.823 D t0 logfile.cc:683 flushing at 149690
+2024-07-25T22:17:48.823 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:48.823 D t0 logfile_sub_source.cc:830 new lines for stdin:456
+2024-07-25T22:17:49.924 D t0 logfile.cc:683 flushing at 152403
+2024-07-25T22:17:49.925 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:49.925 D t0 logfile_sub_source.cc:830 new lines for stdin:460
+2024-07-25T22:17:51.025 D t0 logfile.cc:683 flushing at 153885
+2024-07-25T22:17:51.025 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:51.025 D t0 logfile_sub_source.cc:830 new lines for stdin:464
+2024-07-25T22:17:51.697 D t0 logfile.cc:683 flushing at 155375
+2024-07-25T22:17:51.698 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:51.698 D t0 logfile_sub_source.cc:830 new lines for stdin:468
+2024-07-25T22:17:52.797 D t0 logfile.cc:683 flushing at 156865
+2024-07-25T22:17:52.797 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:52.797 D t0 logfile_sub_source.cc:830 new lines for stdin:472
+2024-07-25T22:17:52.855 D t0 hotkeys.cc:170 executing key sequence x3b: :prompt sql
+2024-07-25T22:17:52.855 I t0 command_executor.cc:117 Executing: prompt sql
+2024-07-25T22:17:52.855 D t0 log_vtab_impl.cc:360 creating log format table: logline = 0x0
+2024-07-25T22:17:52.857 W t0 log_data_helper.cc:67 failed to parse line 471
+2024-07-25T22:17:52.865 W t0 log_data_helper.cc:67 failed to parse line 471
+2024-07-25T22:17:54.119 I t0 log_vtab_impl.cc:1773 vt_best_index(clutch, nConstraint=0)
+2024-07-25T22:17:54.120 W t0 log_data_helper.cc:67 failed to parse line 471
+2024-07-25T22:17:54.401 I t0 command_executor.cc:312 Executing SQL: SELECT * FROM clutch;
+2024-07-25T22:17:54.401 I t0 log_vtab_impl.cc:1773 vt_best_index(clutch, nConstraint=0)
+2024-07-25T22:17:54.401 I t0 line_buffer.cc:1387 16: skipping cache request (compressed=0 already-cached=0)
+2024-07-25T22:17:54.401 I t0 command_executor.cc:406 sqlite3_changes() -> 0
+2024-07-25T22:17:54.401 I t0 logfile.cc:1388 line buffer stats for file: stdin
+2024-07-25T22:17:54.401 I t0 logfile.cc:1389   file_size=-1
+2024-07-25T22:17:54.401 I t0 logfile.cc:1390   buffer_size=152553
+2024-07-25T22:17:54.401 I t0 logfile.cc:1401   read_hist=[   0    0    0    0    0    0    0    0    0    0]
+2024-07-25T22:17:54.401 I t0 logfile.cc:1402   decompressions=0
+2024-07-25T22:17:54.401 I t0 logfile.cc:1403   preads=325
+2024-07-25T22:17:54.401 I t0 logfile.cc:1404   requested_preloads=0
+2024-07-25T22:17:54.401 I t0 logfile.cc:1405   used_preloads=0
+2024-07-25T22:17:54.488 D t0 logfile.cc:683 flushing at 158352
+2024-07-25T22:17:54.488 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:54.488 D t0 logfile_sub_source.cc:830 new lines for stdin:484
+2024-07-25T22:17:54.849 D t0 logfile.cc:683 flushing at 162620
+2024-07-25T22:17:54.849 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:54.849 D t0 logfile_sub_source.cc:830 new lines for stdin:488
+2024-07-25T22:17:55.948 D t0 logfile.cc:683 flushing at 164109
+2024-07-25T22:17:55.948 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:55.948 D t0 logfile_sub_source.cc:830 new lines for stdin:492
+2024-07-25T22:17:56.698 D t0 logfile.cc:683 flushing at 165598
+2024-07-25T22:17:56.698 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:17:56.698 D t0 logfile_sub_source.cc:830 new lines for stdin:496
+2024-07-25T22:17:57.472 D t0 hotkeys.cc:170 executing key sequence x3a: :prompt command
+2024-07-25T22:17:57.472 I t0 command_executor.cc:117 Executing: prompt command
+2024-07-25T22:17:58.568 I t0 command_executor.cc:117 Executing: filter-out QueueClient
+2024-07-25T22:18:01.111 I t0 log.annotate.cc:84 preparing annotation condition expression: SELECT 1 WHERE :log_body LIKE '%[context]%[/context]%'
+2024-07-25T22:18:02.297 D t0 logfile.cc:683 flushing at 167087
+2024-07-25T22:18:02.297 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:18:02.297 D t0 logfile_sub_source.cc:830 new lines for stdin:516
+2024-07-25T22:18:03.269 D t0 hotkeys.cc:170 executing key sequence x67: :goto 0
+2024-07-25T22:18:03.269 I t0 command_executor.cc:117 Executing: goto 0
+2024-07-25T22:18:05.848 D t0 logfile.cc:683 flushing at 174532
+2024-07-25T22:18:05.849 D t0 logfile.cc:1032 stdin: opid_map size: count=0; sizeof(otr)=112; alloc=0
+2024-07-25T22:18:05.849 D t0 logfile_sub_source.cc:830 new lines for stdin:544
+2024-07-25T22:18:06.588 D t0 hotkeys.cc:170 executing key sequence x3b: :prompt sql
+2024-07-25T22:18:06.588 I t0 command_executor.cc:117 Executing: prompt sql
+2024-07-25T22:18:06.588 D t0 log_vtab_impl.cc:360 creating log format table: logline = 0x0
+2024-07-25T22:18:06.589 W t0 log_data_helper.cc:67 failed to parse line 543
+2024-07-25T22:18:13.365 E t0 lnav_log.cc:429 Received signal: 6
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:221 uname:
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:222   sysname=Darwin
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:223   nodename=kchnr.local
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:224   machine=arm64
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:225   release=23.2.0
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:226   version=Darwin Kernel Version 23.2.0: Wed Nov 15 21:53:18 PST 2023; root:xnu-10002.61.3~2/RELEASE_ARM64_T6000
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:227 PCRE:
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:228   jit=0
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:229   jittarget=h…˙Ÿ
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:230 Environment:
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:231   HOME=/Users/jean
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:232   XDG_CONFIG_HOME=(null)
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:233   LANG=en_IE.UTF-8
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:234   PATH=/Users/jean/.opam/default/bin:/opt/homebrew/opt/llvm/bin:/Applications/IntelliJ IDEA CE.app/Contents/MacOS:/Applications/WebStorm.app/Contents/MacOS:/Users/jean/.lucy/bin:/Users/jean/prj/clutch/clutch-cli:/Users/jean/.bun/bin:/Users/jean/.local/bin:/Users/jean/.local/share/pnpm:/Users/jean/.nvm/versions/node/v20.11.0/bin:/Users/jean/go/bin:/Users/jean/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/jean/.opam/default/bin:/opt/homebrew/opt/llvm/bin:/Users/jean/.sdkman/candidates/maven/current/bin:/Users/jean/.sdkman/candidates/leiningen/current/bin:/Users/jean/.sdkman/candidates/java/current/bin:/Applications/IntelliJ IDEA CE.app/Contents/MacOS:/Applications/WebStorm.app/Contents/MacOS:/Users/jean/.lucy/bin:/Users/jean/prj/clutch/clutch-cli:/Users/jean/.bun/bin:/Users/jean/.local/bin:/Users/jean/.local/share/pnpm:/Users/jean/.nvm/versions/node/v20.11.0/bin:/Users/jean/go/bin:/Users/jean/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jean/.cargo/bin:/Applications/iTerm.app/Contents/Resources/utilities
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:235   TERM=tmux-256color
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:236   TZ=(null)
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:237 Process:
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:238   pid=71604
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:239   ppid=68180
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:240   pgrp=71603
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:241   uid=501
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:242   gid=20
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:243   euid=501
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:244   egid=20
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:248   cwd=/Users/jean/prj/clutch/refipipeline/services/clutch-api
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:250 Executable:
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:251   version=lnav 0.12.2
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254 rusage:
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   utime=30.268015
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   stime=0.487670
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   maxrss=26738688
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   ixrss=0
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   idrss=0
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   isrss=0
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   minflt=3517
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   majflt=468
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   nswap=0
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   inblock=0
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   oublock=0
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   msgsnd=50325
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   msgrcv=436
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   nsignals=412
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   nvcsw=2136
+2024-07-25T22:18:13.367 I t0 lnav_log.cc:254   nivcsw=26834
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:501 listview_curses=0x125012cc8
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:511   lv_title=; vc_y=0; lv_top=0; lv_left=0; lv_height=0; lv_selection=0; inner_height=0
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:501 listview_curses=0x114009620
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:511   lv_title=breadcrumb popup; vc_y=0; lv_top=0; lv_left=0; lv_height=0; lv_selection=-1; inner_height=0
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:501 listview_curses=0x1006d09a8
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:511   lv_title=; vc_y=59; lv_top=0; lv_left=0; lv_height=0; lv_selection=0; inner_height=4
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:501 listview_curses=0x1006d0d18
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:511   lv_title=Text Filters; vc_y=59; lv_top=0; lv_left=0; lv_height=0; lv_selection=-1; inner_height=0
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:501 listview_curses=0x1006d1110
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:511   lv_title=Files; vc_y=59; lv_top=0; lv_left=0; lv_height=0; lv_selection=0; inner_height=1
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:501 listview_curses=0x1006d1748
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:511   lv_title=; vc_y=54; lv_top=0; lv_left=0; lv_height=0; lv_selection=0; inner_height=4
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:501 listview_curses=0x1006d1d80
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:511   lv_title=; vc_y=59; lv_top=0; lv_left=0; lv_height=0; lv_selection=0; inner_height=0
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:501 listview_curses=0x1006d2680
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:511   lv_title=; vc_y=59; lv_top=0; lv_left=0; lv_height=0; lv_selection=0; inner_height=0
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:501 listview_curses=0x1006d29f0
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:511   lv_title=; vc_y=59; lv_top=0; lv_left=0; lv_height=0; lv_selection=0; inner_height=0
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:501 listview_curses=0x1006d3028
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:511   lv_title=; vc_y=59; lv_top=0; lv_left=0; lv_height=0; lv_selection=0; inner_height=0
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:501 listview_curses=0x1006d33a0
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:511   lv_title=spectro-details; vc_y=58; lv_top=0; lv_left=0; lv_height=5; lv_selection=0; inner_height=1
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:501 listview_curses=0x1006d39d8
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:511   lv_title=gantt-details; vc_y=59; lv_top=0; lv_left=0; lv_height=5; lv_selection=0; inner_height=0
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:501 listview_curses=0x1006d4098
+2024-07-25T22:18:13.367 D t0 listview_curses.hh:511   lv_title=LOG; vc_y=2; lv_top=543; lv_left=0; lv_height=-3; lv_selection=543; inner_height=544
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:501 listview_curses=0x1006d4408
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:511   lv_title=TEXT; vc_y=2; lv_top=0; lv_left=0; lv_height=-3; lv_selection=0; inner_height=0
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:501 listview_curses=0x1006d4778
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:511   lv_title=HELP; vc_y=2; lv_top=0; lv_left=0; lv_height=-3; lv_selection=0; inner_height=0
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:501 listview_curses=0x1006d4ae8
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:511   lv_title=HIST; vc_y=2; lv_top=0; lv_left=0; lv_height=-3; lv_selection=0; inner_height=1
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:501 listview_curses=0x1006d4e58
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:511   lv_title=DB; vc_y=2; lv_top=0; lv_left=0; lv_height=-3; lv_selection=-1; inner_height=0
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:501 listview_curses=0x1006d51c8
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:511   lv_title=SCHEMA; vc_y=2; lv_top=0; lv_left=0; lv_height=-3; lv_selection=0; inner_height=0
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:501 listview_curses=0x1006d5538
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:511   lv_title=PRETTY; vc_y=2; lv_top=0; lv_left=0; lv_height=-3; lv_selection=-1; inner_height=0
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:501 listview_curses=0x1006d58a8
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:511   lv_title=SPECTRO; vc_y=2; lv_top=0; lv_left=0; lv_height=-3; lv_selection=-1; inner_height=0
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:501 listview_curses=0x1006d5c18
+2024-07-25T22:18:13.368 D t0 listview_curses.hh:511   lv_title=GANTT; vc_y=2; lv_top=0; lv_left=0; lv_height=-3; lv_selection=-1; inner_height=0
+2024-07-25T22:18:13.368 I t0 lnav.hh:98 recent_key_presses: index=3
+ 0x6a (j) 0x47 (G) 0x3b (;) 0x6b (k) 0x6b (k) 0x6b (k) 0x6b (k) 0x6b (k) 0x6b (k) 0x67 (g)

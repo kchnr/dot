@@ -1,0 +1,54 @@
+{
+  "$schema": "https://lnav.org/schemas/format-v1.schema.json",
+  "clutch": {
+    "title": "Clutch log format",
+    "description": "Clutch",
+    "file-type": "json",
+    "hide-extra": true,
+    "ordered-by-time": false,
+    "level-field": "level",
+    "level": {
+      "warning": "WARN",
+      "error": "ERROR",
+      "info": "INFO",
+      "debug": "DEBUG"
+    },
+    "line-format": [
+      {
+        "field": "timestamp"
+      },
+      " ",
+      {
+        "field": "level"
+      },
+      " ",
+      {
+        "field": "requestId"
+      },
+      " ",
+      {
+        "field": "message"
+      },
+      " ",
+      {
+        "field": "tags"
+      }
+    ],
+    "timestamp-field": "timestamp",
+    "opid-field": "requestId",
+    "value": {
+      "level": {
+        "kind": "string"
+      },
+      "requestId": {
+        "kind": "string"
+      },
+      "message": {
+        "kind": "string"
+      },
+      "tags": {
+        "kind": "json"
+      }
+    }
+  }
+}

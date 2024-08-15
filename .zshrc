@@ -109,6 +109,7 @@ alias lua=luajit
 alias vi=nvim
 alias vim=nvim
 alias reba="git fetch --all --prune; git rebase origin/main"
+alias git="HUSKY=0 git"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

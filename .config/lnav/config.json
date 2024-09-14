@@ -1,7 +1,7 @@
 {
     "tuning": {
         "logfile": {
-            "max-unrecognized-lines": 100
+            "max-unrecognized-lines": 2000
         }
     },
     "ui": {

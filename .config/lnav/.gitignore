@@ -1,2 +1,6 @@
 configs/default/
 formats/default/
+crash/
+**/*ppid*
+**/*.history
+log_metadata.db

@@ -23,6 +23,22 @@
       },
       " ",
       {
+        "field": "status"
+      },
+      " ",
+      {
+        "field": "file_path"
+      },
+      " ",
+      {
+        "field": "writeKey"
+      },
+      " ",
+      {
+        "field": "url"
+      },
+      " ",
+      {
         "field": "requestId"
       },
       " ",
@@ -46,9 +62,35 @@
       "message": {
         "kind": "string"
       },
+      "status": {
+        "kind": "string"
+      },
+      "environment": {
+        "kind": "string"
+      },
+      "file_path": {
+        "kind": "string"
+      },
+      "url": {
+        "kind": "string"
+      },
+      "writeKey": {
+        "kind": "string"
+      },
       "tags": {
         "kind": "json"
       }
-    }
+    },
+    "sample": [
+      {
+        "line": "{\"level\":\"DEBUG\",\"timestamp\":\"2024-08-29T15:00:03.391Z\",\"message\":\"rudderstack keys\",\"writeKey\":\"1XXXXXXXXXXXXXXXXXXXXXXXXXb\",\"url\":\"https:\/\/withclutchungm.dataplane.rudderstack.com\"}"
+      },
+      {
+        "line": "{\"level\":\"DEBUG\",\"timestamp\":\"2024-08-29T15:00:03.412Z\",\"message\":\"rudderstack keys\",\"writeKey\":\"1XXXXXXXXXXXXXXXXXXXXXXXXXb\",\"url\":\"https:\/\/withclutchungm.dataplane.rudderstack.com\"}"
+      },
+      {
+        "line": "{\"level\":\"INFO\",\"timestamp\":\"2024-08-29T15:00:13.543Z\",\"message\":\"LoansDataPoller: Polling is disabled\",\"requestId\":\"3f47a90d-56b7-4666-a788-6c7523c3ef1f\",\"dd\":{\"trace_id\":\"527831867057455466\",\"span_id\":\"527831867057455466\",\"service\":\"clutch-api\"}}"
+      }
+    ]
   }
 }

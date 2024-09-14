@@ -110,6 +110,10 @@ alias vi=nvim
 alias vim=nvim
 alias reba="git fetch --all --prune; git rebase origin/main"
 alias git="HUSKY=0 git"
+alias nx="pnpm nx"
+
+# Clutch's Aliases
+alias core-logs='CRYPTOAES_KEY_CORE_LOGS="fWpXp6ZK.d8VisE.Rj*wnxdu" && clutch account-opening core-logs'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

@@ -22,3 +22,8 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 . "$HOME/.cargo/env"
+
+
+# Added by Toolbox App
+export PATH="$PATH:/home/jean/.local/share/JetBrains/Toolbox/scripts"
+

@@ -262,6 +262,20 @@ perl5/
 .config/bruno/
 .config/google-chrome/
 .config/menus/
+.config/JetBrains/
+.config/QtProject.conf
+.config/VirtualBox/
+.config/autostart/
+.config/libreoffice/
+.config/session/
+.config/smb4krc
+.config/totem/
+.java/
+.konan/
+.profile.bak
+.skiko/
+.zprofile.bak
+VirtualBox VMs/
 .gnome/
 .factorio/
 .mozilla/

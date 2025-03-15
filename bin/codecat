@@ -1,0 +1,10 @@
+#!/bin/bash
+while read -r file; do  # Change from "$@" to stdin reading
+    if [ -d "$file" ]; then
+        echo "Directory: $file"
+    elif [ -f "$file" ]; then
+        echo -e "\n=== START FILE: $file ==="
+        cat "$file"
+        echo -e "=== END FILE: $file ===\n"
+    fi
+done

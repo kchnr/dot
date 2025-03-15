@@ -48,11 +48,22 @@
       " ",
       {
         "field": "tags"
+      },
+      " ",
+      {
+        "field": "error"
+      },
+      " ",
+      {
+        "field": "extra"
       }
     ],
     "timestamp-field": "timestamp",
     "opid-field": "requestId",
     "value": {
+      "timestamp": {
+        "kind": "string"
+      },
       "level": {
         "kind": "string"
       },
@@ -60,6 +71,12 @@
         "kind": "string"
       },
       "message": {
+        "kind": "string"
+      },
+      "accountOpeningApplicationId": {
+        "kind": "string"
+      },
+      "customerId": {
         "kind": "string"
       },
       "status": {
@@ -78,6 +95,15 @@
         "kind": "string"
       },
       "tags": {
+        "kind": "json"
+      },
+      "error": {
+        "kind": "json"
+      },
+      "extra": {
+        "kind": "json"
+      },
+      "events": {
         "kind": "json"
       }
     },

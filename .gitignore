@@ -300,3 +300,9 @@ soapui-settings.xml
 .atari800
 .config/github-copilot
 .minecraft/
+.config/Code/
+.config/pavucontrol.ini
+.config/user-share/
+/.luarocks/
+exercism/
+.config/exercism/

@@ -1,5 +1,7 @@
-import = ["~/.config/alacritty/themes/themes/solarized_light.toml"]
 [font]
 size = 20
 [window]
 decorations = "None"
+
+[general]
+import = ["~/.config/alacritty/themes/themes/solarized_light.toml"]

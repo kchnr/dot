@@ -105,7 +105,11 @@ PATH="$HOME/bin:$PATH"
 # Go bin 
 PATH="$HOME/go/bin:$PATH"
 
+# Lua
+PATH="$HOME/.luarocks/bin:$PATH"
+
 alias lua=luajit
+
 alias vi=nvim
 alias vim=nvim
 alias reba="git fetch --all --prune; git rebase origin/main"

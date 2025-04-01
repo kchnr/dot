@@ -7,6 +7,7 @@ return {
         "nvim-treesitter/nvim-treesitter",
         "fredrikaverpil/neotest-golang",
         "leoluz/nvim-dap-go",
+        "nvim-neotest/neotest-jest",
     },
     config = function()
         require("neotest").setup({

@@ -306,3 +306,6 @@ soapui-settings.xml
 /.luarocks/
 exercism/
 .config/exercism/
+.codeium/
+.cursor/
+.windsurf/

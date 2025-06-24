@@ -15,6 +15,7 @@ return {
                 require("neotest-golang")({
                     dap = { justMyCode = false },
                 }),
+                require("neotest-jest"),
             },
         })
 

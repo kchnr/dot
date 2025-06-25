@@ -1,0 +1,202 @@
+# The C4 Model — A Detailed Guide for Practical Architecture Diagrams
+
+The C4 Model is a compact set of diagram types that lets you present software architecture clearly at four nested levels of detail. Because it focuses on communication rather than formal notation, you can draw the diagrams with anything from a whiteboard to a “diagrams-as-code” tool. This guide describes every diagram, explains what information belongs in each view, shows how to keep the diagrams consistent, and offers advice for producing and maintaining them in day-to-day work.
+
+## Abstractions
+In order to create some “maps of your code”, we first need a common set of abstractions that we can use to describe the static structure of a software system. In the C4 model:
+
+A software system is made up of one or more containers (applications and data stores), each of which contains one or more components, which in turn are implemented by one or more code elements (classes, interfaces, objects, functions, etc). And people (actors, roles, personas, named individuals, etc) use the software systems that we build.
+
+The C4 model is an “abstraction-first” approach to diagramming software architecture, based upon abstractions that reflect how software architects and developers think about and build software. The small set of abstractions and diagram types makes the C4 model easy to learn and use.
+
+# Core Diagram Types
+## Software system
+A software system is the highest level of abstraction and describes something that delivers value to its users, whether they are human or not. This includes the software system you are modelling, and the other software systems upon which your software system depends (or vice versa).
+
+Unfortunately the term “software system” is the hardest of the C4 model abstractions to define, and this isn’t helped by the fact that each organisation will also have their own terminology for describing the same thing, typically using terms such as “application”, “product”, “service”, etc. One way to think about it is that a software system is something a single software development team is building, owns, has responsibility for, and can see the internal implementation details of. Perhaps the code for that software system resides in a single source code repository, and anybody on the team is entitled to modify it. In many cases, the boundary of a software system will correspond to the boundary of a single team. It may also be the case that everything inside the boundary of a software system is deployed at the same time.
+
+Things that are not usually software systems in the C4 model include product domains, bounded contexts, business capabilities, feature teams, tribes, or squads.
+
+Container
+Not Docker! In the C4 model, a container represents an application or a data store. A container is something that needs to be running in order for the overall software system to work. In real terms, a container is something like:
+
+Server-side web application: A Java EE web application running on Apache Tomcat, an ASP.NET MVC application running on Microsoft IIS, a Ruby on Rails application running on WEBrick, a Node.js application, etc.
+Client-side web application: A JavaScript application running in a web browser using Angular, Backbone.JS, jQuery, etc.
+Client-side desktop application: A Windows desktop application written using WPF, an OS X desktop application written using Objective-C, a cross-platform desktop application written using JavaFX, etc.
+Mobile app: An Apple iOS app, an Android app, a Microsoft Windows Phone app, etc.
+Server-side console application: A standalone (e.g. “public static void main”) application, a batch process, etc.
+Serverless function: A single serverless function (e.g. Amazon Lambda, Azure Function, etc).
+Database: A schema or database in a relational database management system, document store, graph database, etc such as MySQL, Microsoft SQL Server, Oracle Database, MongoDB, Riak, Cassandra, Neo4j, etc.
+Blob or content store: A blob store (e.g. Amazon S3, Microsoft Azure Blob Storage, etc) or content delivery network (e.g. Akamai, Amazon CloudFront, etc).
+File system: A full local file system or a portion of a larger networked file system (e.g. SAN, NAS, etc).
+Shell script: A single shell script written in Bash, etc.
+etc
+A container is essentially a runtime boundary around some code that is being executed or some data that is being stored. The name “container” was chosen because I wanted a name that didn’t imply anything about the physical nature of how that container is executed. For example, a single Java EE server like Apache Tomcat can run multiple web applications inside a single Java Virtual Machine, although each of those web applications is essentially isolated from the others. At development time I might have three web applications running on a single Apache Tomcat server, while each web application may be deployed onto a dedicated Apache Tomcat server in a live environment. In this situation, each web application is a “C4 container”, with the deployment being a seperate concern.
+
+FAQ
+Why “container”?
+Terms like “process”, “application”, “app”, “server”, “deployable unit”, etc all have associated implications, so the name “container” was chosen as a generic way to describe something in which components live. From one perspective, it’s unfortunate that containerisation has become popular, because many software developers now associate the term “container” with Docker. From another perspective though, there is sometimes a nice parity between a container in the C4 model and an infrastructure (e.g. Docker) container.
+
+While many teams successfully use the C4 model as is, feel free to change the terminology if needed.
+
+Web applications; one container or two?
+If you’re building a server-side web application (e.g. Spring MVC, ASP.NET, Ruby on Rails, Django, etc) that is predominantly generating static HTML content, then that’s a single container. If there’s a significant quantity of JavaScript being delivered by the server-side web application (e.g. a single-page application built using Angular), then that’s two containers.
+
+Although, at deployment time, the server-side web application includes both the server-side and client-side code, treating the client and server as two separate containers makes it explicit that these are two separate process spaces, communicating via an inter-process/remote communication mechanism (e.g. JSON/HTTPS). It also provides a basis for zooming in to each container separately to show the components inside them.
+
+Is a Java JAR, C# assembly, DLL, module, etc a container?
+Typically not. A container is a runtime construct, like an application; whereas Java JAR files, C# assemblies, DLLs, modules, etc are used to organise the code within those applications.
+
+Should data storage services be shown as software systems or containers?
+A frequently asked question is whether services like Amazon S3, Amazon RDS, Azure SQL Database, content delivery networks, etc should be shown as software systems or containers. After all, these are external services that most of us don’t own or run ourselves.
+
+If you’re building a software system that is using Amazon S3 for storing data, it’s true that you don’t run S3 yourself, but you do have ownership and responsibility for the buckets you are using. Similarly with Amazon RDS, you have (more or less) complete control over any database schemas that you create. For this reason, treat them as containers because they are an integral part of your software architecture, although they are hosted elsewhere.
+
+## Component Diagram
+Component
+The word “component” is a hugely overloaded term in the software development industry but, in the C4 model, a component is a grouping of related functionality encapsulated behind a well-defined interface. If you’re using a language like Java or C#, the simplest way to think of a component is that it’s a collection of implementation classes behind an interface.
+
+With the C4 model, components are not separately deployable units. Instead, it’s the container that’s the deployable unit. In other words, all components inside a container execute in the same process space. Aspects such as how components are packaged (e.g. one component vs many components per JAR file, DLL, shared library, etc) is an orthogonal concern.
+
+Components vs code?
+A component is a way to step up one level of abstraction from the code-level building blocks that you have in the programming language that you’re using. For example:
+
+Object-oriented programming languages (e.g. Java, C#, C++, etc): A component is made up of classes and interfaces.
+Procedural programming languages (e.g. C): A component could be made up of a number of C files in a particular directory.
+JavaScript: A component could be a JavaScript module, which is made up of a number of objects and functions.
+Functional programming languages: A component could be a module (a concept supported by languages such as F#, Haskell, etc), which is a logical grouping of related functions, types, etc.
+If you’re using an object-oriented programming language, your components will be implemented using one or more classes. Let’s look at a quick example to better define what a component is in the context of some code.
+
+The Spring PetClinic application is a sample codebase that illustrates how to build a Java web application using the Spring MVC framework. From a non-technical perspective, it’s a software system designed for an imaginary pet clinic that stores information about pets and their owners, visits made to the clinic, and the vets who work there. The system is only designed to be used by employees of the clinic. From a technical perspective, the Spring PetClinic system consists of a web application and a relational database schema.
+
+The version1 of the web application we’ll look at here is a typical layered architecture consisting of a number of web MVC controllers, a service containing “business logic” and some repositories for data access. There are also some domain and util classes too. If you download a copy of the GitHub repository2, open it in your IDE of choice and visualise it by reverse-engineering a UML class diagram from the code, you’ll get something like this.
+
+
+
+As you would expect, this diagram is showing you all the Java classes and interfaces that make up the Spring PetClinic web application, plus all the relationships between them. The properties and methods are hidden on the diagram because they add too much noise to the picture. This isn’t a complex codebase by any stretch of the imagination but, by showing classes and interfaces, the diagram is showing too much detail.
+
+Let’s remove those classes that aren’t useful to having an “architecture” discussion about the system. In other words, let’s only show those classes/interfaces that have some significance from a static structure perspective. In concrete terms, for this specific codebase, it means excluding the model/domain classes (they are just data structures) and util classes.
+
+
+
+After a little rearranging, we now have a simpler diagram with which to reason about the software architecture. We can also see the architectural layers again (controllers, services and repositories). But this diagram is still showing code-level elements (i.e. classes and interfaces). In order to zoom up one level, we need to identify which of these code-level elements can be grouped together to form “components”. The strategy for grouping code-level elements into components will vary from codebase to codebase but, for this codebase, the strategy might look like this.
+
+
+
+Each of the blue boxes represents a “component” in this codebase. In summary, each of the web controllers is a separate component, along with the result of combining the remaining interfaces and their implementation classes. If we remove the code level noise, we get a picture like this.
+
+
+
+In essence, we’re grouping the classes and interfaces into components to form units of related functionality. You will likely have shared code (e.g. abstract base classes, supporting classes, helper classes, utility classes, etc) that are used across many components, such as the JdbcPetVisitExtractor in this example. Some can be refactored and moved “inside” a particular component, but some of them are inevitable.
+
+Although this example illustrates a traditional layered architecture, the same principles are applicable regardless of how you package your code (e.g. by layer, feature or component) or the architectural style in use (e.g. layered, hexagonal, ports and adapters, etc). If your codebase is small enough, you can go through this process manually. For larger codebases though, you’ll likely want to consider automatic generation of component diagrams by reverse-engineering your codebase (example).
+
+1 the diagrams shown here do not reflect the latest version of the Spring PetClinic, but are sufficient for the discussion
+2 git checkout 95de1d9f8bf63560915331664b27a4a75ce1f1f6 is the version these diagrams were based upon
+FAQ
+Is a Java JAR, C# assembly, DLL, module, package, namespace, folder etc a component?
+Perhaps but, again, typically not. The C4 model is about showing the runtime units (containers) and how functionality is partitioned across them (components), rather than organisational units such as Java JAR files, C# assemblies, DLLs, modules, packages, namespaces or folder structures.
+
+Of course, there may be a one-to-one mapping between these constructs and a component; e.g. if you’re building a hexagonal architecture, you may create a single Java JAR file or C# assembly per component. On the other hand, a single component might be implemented using code from a number of JAR files, which is typically what happens when you start to consider third-party frameworks/libraries, and how they become embedded in your codebase.
+
+## Code
+Finally, components are made up of one or more code elements constructed with the basic building blocks of the programming language that you’re using - classes, interfaces, enums, functions, objects, etc.
+
+
+## Notation and Styling
+Every diagram needs a title that names the system and the view, along with a short sentence that defines its scope. Include a legend that explains colours, shapes, arrow heads, and line styles. Draw arrows in one direction only, label each arrow with a concise verb, and where relevant add the protocol or data format. Write the technology underneath the name of each container or component so that anyone reading the diagram can immediately see, for example, that a particular database is PostgreSQL or that an API runs on Node.js. Avoid ambiguous box names such as “Core Service”; describe the responsibility, for instance “Pricing Calculation Service”.
+
+## Creating Diagrams in Practice
+Begin by gathering key stakeholders—architects, developers, product owners—and produce the System Context view together. Confirm that everyone agrees on who uses the system and which external systems it touches. Once the boundary is clear, enumerate containers by asking whether each logical piece could be deployed, scaled, or replaced independently. Assign responsibilities and technologies to those containers, then document their interactions. If a container feels too large, decompose it into components until each component has one clear purpose. Generate code diagrams only when they serve an immediate need, and automate that generation so the diagrams never drift from reality.
+
+## Reviewing Diagrams
+Before publishing a diagram, verify that the title and scope sentence accurately describe the view. Check that every element has a unique, meaningful name and a short statement of responsibility, that the technology is obvious wherever it affects design or operations, and that all relationships are directional, described with verbs, and annotated with protocols where necessary. Confirm that the legend covers every visual convention you adopted, and finally open the diagram on a screen or print it on a single page to ensure it remains legible at a normal presentation size.
+
+## Common Pitfalls to Avoid
+Overloading a single diagram with context, technology, and class-level details is the most common mistake; split diagrams by purpose instead. Unlabelled arrows force readers to guess what flows between two boxes, so always add the action or data that travels. Static drawings that lag behind the codebase can mislead new team members—treat your diagrams as version-controlled artefacts and review them whenever you change the architecture. Be wary of vague box names; clarity of responsibility is the primary benefit of C4 and generic labels undermine it.
+
+Using C4 to describe libraries, frameworks and SDKs?
+The C4 model is really designed to model a software system, at various levels of abstraction. To document a library, framework or SDK, you might be better off using something like UML. Alternatively, you could use the C4 model to describe a usage example of your framework, library or SDK; perhaps using colour coding to signify which parts of the software system are bespoke vs those provided for you.
+
+Is the C4 model universally applicable?
+The C4 model was designed to help describe, document, and diagram custom-built, bespoke software systems. From this perspective, the C4 model can be used to describe a variety of software architectures (monolithic or distributed), built in a variety of programming languages, deployed on a variety of platforms (on-premises or cloud).
+
+Solutions that are perhaps less suited to the C4 model include embedded systems/firmware, and solutions that rely on heavy customization rather than bespoke development (e.g. SAP and Salesforce). Even with these solutions, you still may find the System Context and Container diagrams useful.
+
+## Some notes on Microservices and Queues and BUS
+
+1. Microservices
+1.1 From Monolith to Microservices
+Monolithic style: a single web application and database schema provide all business capabilities. Quick to deliver, but can slow delivery as the codebase and team grow.
+
+Microservices style: “an approach to developing a single software system as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery.” 
+c4model.com
+
+1.2 Diagramming Microservices as Containers
+Inside one team: if all microservices are owned by a single team and seen as an implementation detail, draw them within the software system boundary.
+
+Model each microservice as a pair of containers (API + database schema) and use color-coding or lightly drawn grouping boxes to show their pairing, rather than seven separate boxes. 
+c4model.com
+
+Expanding scope: as new business capabilities (e.g. “D”) appear, add a new microservice container (e.g. a stateless function) alongside existing ones. 
+c4model.com
+
+1.3 Conway’s Law & Separate Systems
+When you split into multiple engineering teams (e.g. Team A, B, C, D), “each microservice will be owned by a separate team.”
+
+At that point, promote each microservice to its own software system in system-context diagrams. Each team then draws its own system context and container diagrams for its service. 
+c4model.com
+
+1.4 Key Takeaways
+Implementation vs. Integration: decide whether microservices are purely an internal implementation detail or distinct systems for integration with other teams.
+
+Grouping: use color or boxes to group API+database containers when services remain inside one system.
+
+Ownership: once services are owned separately, represent them as independent software systems.
+
+2. Queues and Topics
+2.1 Why Not Model the Message Bus?
+A “hub-and-spoke” diagram (services → message bus → services) hides coupling between producers and consumers. 
+c4model.com
+
+2.2 Point-to-Point Coupling
+Treat each queue or topic as a C4 container (a data store):
+
+Producers add messages; consumers remove them.
+
+Shows explicit coupling (e.g. Service A → Queue X → Service C). 
+c4model.com
+
+You can then simplify by omitting the queue container and labeling the arrow “via X,” if you prefer less clutter.
+
+2.3 Deployment Independence
+Modeling queues/topics as containers lets you ignore physical topology:
+
+Locally, all queues may run on one broker;
+
+In production, each queue/topic can live on its own cluster for scale or security. 
+c4model.com
+
+2.4 Pub/Sub Variations
+Reverse arrow directions or change relationship styles (e.g. dashed vs. solid) to highlight publisher/subscriber roles in a topic-based model. 
+c4model.com
+
+2.5 Ownership of Messaging Containers
+If each service is its own software system, decide who “owns” each queue/topic container:
+
+Does the producer define the format?
+
+Does the consumer?
+
+Or is it a shared or third-party concern? Ownership affects your diagrams. 
+c4model.com
+
+2.6 Summary of Correct Approaches
+Incorrect: model the entire message bus as one container.
+
+Correct: explicitly model queues/topics as C4 containers.
+
+Also correct: implicitly model interactions via a “via <queue>” notation on relationships. 
+c4model.com
+
+In practice, choose the style that best balances clarity and simplicity for your audience: explicit container boxes for detailed coupling or clean arrow-only diagrams when you need high-level views.

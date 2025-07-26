@@ -306,6 +306,7 @@ soapui-settings.xml
 /.luarocks/
 exercism/
 .config/exercism/
+<<<<<<< HEAD
 .codeium/
 .cursor/
 .windsurf/
@@ -315,3 +316,10 @@ exercism/
 
 .clutch-only.sh
 .gemini
+=======
+.oh-my-zsh
+.config/StardewValley/
+.config/libvirt/
+.config/toolbox/
+.config/uv/
+>>>>>>> 7cc5a37 (personal pc updates)

@@ -115,14 +115,15 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-PATH="/usr/local/bin:$PATH"
-PATH="$HOME/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Go bin 
-PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 # Lua
-PATH="$HOME/.luarocks/bin:$PATH"
+export PATH="$HOME/.luarocks/bin:$PATH"
 
 alias lua=luajit
 
@@ -181,4 +182,7 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-source "$HOME/.clutch-only.sh"
+[[ ! -f "$HOME/.clutch-only.sh" ]] || source "$HOME/.clutch-only.sh"
+
+#dee Do
+alias deedo="uv run --project '$HOME/prj/deedo/' deedo"

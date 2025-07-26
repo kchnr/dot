@@ -177,13 +177,16 @@ export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 [[ ! -r /Users/jean/.opam/opam-init/init.zsh ]] || source /Users/jean/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
-source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme ]] || source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Clutch only script
 [[ ! -f "$HOME/.clutch-only.sh" ]] || source "$HOME/.clutch-only.sh"
+#
+# Personal only script
+[[ ! -f "$HOME/.personal-secret.sh" ]] || source "$HOME/.personal-secret.sh"
 
 #dee Do
 alias deedo="uv run --project '$HOME/prj/deedo/' deedo"

@@ -313,13 +313,11 @@ exercism/
 /.config/nvim/lazy-lock.json
 .config/uv/
 /.config/lnav/log_metadata.db
-
 .clutch-only.sh
 .gemini
-=======
+.personal-secret.sh
 .oh-my-zsh
 .config/StardewValley/
 .config/libvirt/
 .config/toolbox/
 .config/uv/
->>>>>>> 7cc5a37 (personal pc updates)

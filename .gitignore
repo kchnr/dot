@@ -321,3 +321,7 @@ exercism/
 .config/libvirt/
 .config/toolbox/
 .config/uv/
+.claude.json
+.claude.json.backup
+.claude/
+bun.lock

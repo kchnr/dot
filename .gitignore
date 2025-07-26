@@ -312,3 +312,6 @@ exercism/
 /.config/nvim/lazy-lock.json
 .config/uv/
 /.config/lnav/log_metadata.db
+
+.clutch-only.sh
+.gemini

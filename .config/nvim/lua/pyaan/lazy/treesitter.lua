@@ -14,6 +14,7 @@ return {
                     "rust",
                     "jsdoc",
                     "bash",
+                    "elixir",
                 },
 
                 -- Install parsers synchronously (only applied to `ensure_installed`)

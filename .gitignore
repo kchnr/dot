@@ -328,3 +328,13 @@ bun.lock
 .swift-version
 .swiftly/
 .yt2doc/
+.config/Rygel/
+.config/aseprite/
+.config/dleyna-server-service.conf
+.config/goa-1.0/
+.config/openrazer/
+.config/polychromatic/
+.config/rclone/
+.config/rygel.conf
+.config/ulauncher/
+.config/zellij/

@@ -325,3 +325,6 @@ exercism/
 .claude.json.backup
 .claude/
 bun.lock
+.swift-version
+.swiftly/
+.yt2doc/

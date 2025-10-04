@@ -338,3 +338,5 @@ bun.lock
 .config/rygel.conf
 .config/ulauncher/
 .config/zellij/
+.config/Alabaster Dawn/
+.deedo/

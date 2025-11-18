@@ -7,11 +7,13 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "agent_servers": {},
   "agent": {
+    "default_profile": "write",
     "always_allow_tool_actions": true,
     "default_model": {
       "provider": "deepseek",
-      "model": "deepseek-chat"
+      "model": "deepseek-reasoner"
     }
   },
   "icon_theme": "Catppuccin Latte",

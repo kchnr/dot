@@ -190,3 +190,7 @@ export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 
 #dee Do
 alias deedo="uv run --project '$HOME/prj/deedo/' deedo"
+
+#Tauri
+export ANDROID_HOME="$HOME/Android/Sdk"
+export NDK_HOME="$ANDROID_HOME/ndk/$(ls -1 $ANDROID_HOME/ndk)"

@@ -340,3 +340,11 @@ bun.lock
 .config/zellij/
 .config/Alabaster Dawn/
 .deedo/
+.config/flutter/
+.dart-tool/
+.deedo/
+.expo/
+.swiftpm/
+bin/dart
+bin/flutter
+flutter/

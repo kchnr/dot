@@ -116,7 +116,6 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="/usr/local/bin:$PATH"
-export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 # Go bin 
@@ -124,8 +123,10 @@ export PATH="$HOME/go/bin:$PATH"
 
 # Lua
 export PATH="$HOME/.luarocks/bin:$PATH"
-
 alias lua=luajit
+alias luarocks='luarocks --lua-version 5.1'
+# Automatically export search paths for LuaJIT modules
+eval $(luarocks --lua-version 5.1 path --bin)
 
 alias vi=nvim
 alias vim=nvim
@@ -194,3 +195,11 @@ alias deedo="uv run --project '$HOME/prj/deedo/' deedo"
 #Tauri
 export ANDROID_HOME="$HOME/Android/Sdk"
 export NDK_HOME="$ANDROID_HOME/ndk/$(ls -1 $ANDROID_HOME/ndk)"
+
+
+#Lua
+#
+
+
+#Mono Game
+MGFXC_WINE_PATH="$HOME/.winemonogame"

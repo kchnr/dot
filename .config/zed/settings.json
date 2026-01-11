@@ -9,15 +9,23 @@
 {
   "agent_servers": {},
   "agent": {
+    "profiles": {
+      "test": {
+        "name": "Test",
+        "tools": {},
+        "enable_all_context_servers": false,
+        "context_servers": {}
+      }
+    },
     "default_profile": "write",
     "always_allow_tool_actions": true,
     "default_model": {
       "provider": "deepseek",
-      "model": "deepseek-reasoner"
+      "model": "deepseek-chat"
     }
   },
   "icon_theme": "Catppuccin Latte",
-  "theme": "Tokyo Night",
+  "theme": "Ayu Light",
   "buffer_font_size": 15,
   "features": {
     "copilot": false
@@ -27,7 +35,7 @@
   "ensure_final_newline_on_save": false,
   "base_keymap": "VSCode",
   "project_panel": {
-    "dock": "right"
+    "dock": "left"
   },
   "formatter": "prettier"
 }

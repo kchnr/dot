@@ -382,3 +382,7 @@ Android/
 .themes/
 .winemonogame/
 Unity/
+.config/Kvantum/
+.config/Thunar/
+.config/xfce4/
+.pulse-cookie

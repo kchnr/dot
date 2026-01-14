@@ -3,6 +3,7 @@
 	email = jean.kirchner@gmail.com
 [core]
 	editor = nvim
+	pager = less -F -X
 
 [diff]
 [color]

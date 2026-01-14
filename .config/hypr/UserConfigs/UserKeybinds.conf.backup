@@ -33,7 +33,7 @@ bindd = $mainMod, SPACE, switch keyboard layout, exec, $scriptsDir/SwitchKeyboar
 
 bindd = $mainMod, Return, Open terminal, exec, $term
 bindd = $mainMod, E, file manager, exec, $files
-bindd = $mainMod, W, open browser, exec, xdg-open "https://"
+bindd = $mainMod, B, open browser, exec, xdg-open "https://"
 
 # ============================================
 # WINDOW MANAGEMENT
@@ -129,7 +129,11 @@ bindd = $mainMod, K, cycle previous, cyclenext, prev
 bindd = $mainMod, P, toggle pseudo, pseudo,
 bindd = $mainMod SHIFT, I, toggle split, togglesplit
 
-
+# Move focus with arrow keys
+bindd = $mainMod, left, focus left, movefocus, l
+bindd = $mainMod, right, focus right, movefocus, r
+bindd = $mainMod, up, focus up, movefocus, u
+bindd = $mainMod, down, focus down, movefocus, d
 
 # Move windows
 bindd = $mainMod SHIFT, left, move window left, movewindow, l
@@ -157,7 +161,7 @@ bindd = $mainMod SHIFT, R, refresh config, exec, $scriptsDir/Refresh.sh
 bindd = $mainMod, C, calculator, exec, $UserScripts/RofiCalc.sh
 
 # Web search
-bindd = $mainMod ALT, S, web search, exec, $scriptsDir/RofiSearch.sh
+bindd = $mainMod, S, web search, exec, $scriptsDir/RofiSearch.sh
 
 # ============================================
 # WAYBAR CONTROLS
@@ -177,9 +181,6 @@ bindd = $mainMod ALT, B, waybar layout, exec, $scriptsDir/WaybarLayout.sh
 # ============================================
 
 # Toggle between light and dark mode
-# Simple theme switching (reliable)
-bindd = $mainMod SHIFT, L, light mode, exec, $scriptsDir/LightMode.sh
-bindd = $mainMod SHIFT, D, dark mode, exec, $scriptsDir/DarkMode.sh
 bindd = $mainMod SHIFT, T, toggle theme, exec, $scriptsDir/DarkLight.sh
 
 # ============================================

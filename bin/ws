@@ -1,5 +1,0 @@
-#!/bin/bash
-# opens webstorm passing parameters to it detaching it from terminal
-webstorm "$@" &>/dev/null &
-disown
-exit 0

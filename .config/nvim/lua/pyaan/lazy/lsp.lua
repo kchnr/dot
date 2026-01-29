@@ -331,6 +331,30 @@ return {
                 -- You can use 'stop_after_first' to run the first available formatter from the list
                 javascript = { "prettierd", "prettier", stop_after_first = true },
                 typescript = { "prettierd", "prettier", stop_after_first = true },
+                html = { "prettierd", "prettier", stop_after_first = true },
+                css = { "prettierd", "prettier", stop_after_first = true },
+                json = { "prettierd", "prettier", stop_after_first = true },
+                markdown = { "prettierd", "prettier", stop_after_first = true },
+            },
+            formatters = {
+                prettier = {
+                    prepend_args = { "--tab-width", "4", "--use-tabs", "false" },
+                },
+                prettierd = {
+                    prepend_args = { "--tab-width", "4", "--use-tabs", "false" },
+                },
+                stylua = {
+                    prepend_args = { "--indent-width", "4" },
+                },
+                shfmt = {
+                    prepend_args = { "-i", "4" },
+                },
+                clang_format = {
+                    prepend_args = { "--style", "{IndentWidth: 4, UseTab: Never}" },
+                },
+                rustfmt = {
+                    prepend_args = { "--config", "tab_spaces=4" },
+                },
             },
         },
     },

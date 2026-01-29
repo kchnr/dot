@@ -203,3 +203,6 @@ export NDK_HOME="$ANDROID_HOME/ndk/$(ls -1 $ANDROID_HOME/ndk)"
 
 #Mono Game
 MGFXC_WINE_PATH="$HOME/.winemonogame"
+
+# opencode
+export PATH=/home/pya/.opencode/bin:$PATH

@@ -390,3 +390,5 @@ Unity/
 .config/fabric/
 .opencode/
 .vmodules/
+.ollama/
+.oh-my-zsh/

@@ -392,3 +392,4 @@ Unity/
 .vmodules/
 .ollama/
 .oh-my-zsh/
+.terminfo/

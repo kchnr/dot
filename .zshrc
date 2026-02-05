@@ -134,9 +134,12 @@ alias reba="git fetch --all --prune; git rebase origin/main"
 alias git="HUSKY=0 git"
 alias nx="pnpm nx"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+[ -s "$HOME/.nvm/nvm.sh" ] && export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && export NVM_DIR="/opt/homebrew/opt/nvm"
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
 
 # pnpm
 export PNPM_HOME="/Users/jean.kirchner/.local/share/pnpm"

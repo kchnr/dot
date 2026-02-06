@@ -1,6 +1,6 @@
 # LOCAL PATH
 if [ -d "$HOME/.local/bin" ]; then
-    export PATH="$HOME/.local/bin:$PATH"
+    export PATH="$PATH:$HOME/.local/bin"
 fi
 
 # Detect if inside vscode editors
@@ -86,4 +86,3 @@ alias deedo="uv run --project '$HOME/prj/deedo/' deedo"
 
 # Personal/Secret overrides
 [[ ! -f "$HOME/.personal-secret.sh" ]] || source "$HOME/.personal-secret.sh"
-

@@ -17,6 +17,10 @@ ZSH_THEME="robbyrussell"
 plugins=(git autojump) # Removed 'brew' to prevent path hijacking
 source $ZSH/oh-my-zsh.sh
 
+# autojump
+[[ -s /home/pya/.autojump/etc/profile.d/autojump.sh ]] && source /home/pya/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
+
 
 # Set Arch System defaults first
 export EDITOR='nvim'
@@ -42,18 +46,13 @@ export NVM_DIR="$HOME/.nvm"
 export PNPM_HOME="$HOME/.local/share/pnpm"
 export PATH="$PATH:$PNPM_HOME"
 
+#Bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+[ -s "/home/pya/.bun/_bun" ] && source "/home/pya/.bun/_bun"
+
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
-
-
-# bun completions
-[
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$PATH:$BUN_INSTALL/bin"
-[ -s "$BUN_INSTALL/_bun" ] && source "$BUN_INSTALL/_bun"
- -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # --- Go ---
 export PATH="$PATH:$HOME/go/bin"
@@ -86,3 +85,4 @@ alias deedo="uv run --project '$HOME/prj/deedo/' deedo"
 
 # Personal/Secret overrides
 [[ ! -f "$HOME/.personal-secret.sh" ]] || source "$HOME/.personal-secret.sh"
+

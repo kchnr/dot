@@ -10,15 +10,7 @@ return {
 
             configs.setup({
                 ensure_installed = {
-                    "vimdoc",
-                    "javascript",
-                    "typescript",
-                    "c",
-                    "lua",
-                    "rust",
-                    "jsdoc",
-                    "bash",
-                    "elixir",
+                    "maintained",
                 },
                 sync_install = false,
                 auto_install = true,

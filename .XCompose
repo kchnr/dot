@@ -1,0 +1,4 @@
+# UTF-8 compose sequences
+# Override ' + c to produce ç instead of ć (US-Intl cedilla fix)
+<dead_acute> <c> : "ç"
+<dead_acute> <C> : "Ç"

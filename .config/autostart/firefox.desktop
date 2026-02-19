@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Firefox (Desktop 1)
+Comment=Web Browser
+Exec=firefox
+Type=Application
+Terminal=false
+X-KDE-StartupNotify=true
+X-KDE-autostart-phase=2

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Thunderbird (Desktop 1)
+Comment=Email Client
+Exec=thunderbird
+Type=Application
+Terminal=false
+X-KDE-StartupNotify=true
+X-KDE-autostart-phase=2

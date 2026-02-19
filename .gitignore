@@ -56,7 +56,10 @@
 /.irb-history
 /.irb_history
 /.lesshst
-/.local
+.local/lib/
+.local/bin/
+.local/state/
+.local/cache/
 /.localized
 /.macports
 /.mutt/aliases
@@ -266,7 +269,6 @@ perl5/
 .config/JetBrains/
 .config/QtProject.conf
 .config/VirtualBox/
-.config/autostart/
 .config/libreoffice/
 .config/session/
 .config/smb4krc
@@ -306,7 +308,8 @@ soapui-settings.xml
 /.luarocks/
 exercism/
 .config/exercism/
-<<<<<<< HEAD
+
+# Code editors & IDEs
 .codeium/
 .cursor/
 .windsurf/
@@ -320,7 +323,6 @@ exercism/
 .config/StardewValley/
 .config/libvirt/
 .config/toolbox/
-.config/uv/
 .claude.json
 .claude.json.backup
 .claude/
@@ -367,7 +369,6 @@ Android/
 .config/qt6ct/
 .config/quickshell/
 .config/rofi/
-.config/swappy/
 .config/swaync/
 .config/systemd/
 .config/unityhub/
@@ -376,6 +377,8 @@ Android/
 .config/waybar/
 .config/wlogout/
 .config/xarchiver/
+.config/hypr/
+.config/sway/
 .gtkrc-2.0
 .icons/
 .templateengine/
@@ -399,3 +402,43 @@ from-source/
 .config/nwg-look/
 .config/transmission/
 .thunderbird/
+
+# KDE Plasma (machine-specific/runtime)
+.config/PlasmaUserFeedback
+.config/Trolltech.conf
+.config/autostart-kde-backup/
+.config/baloofilerc
+.config/bluedevilglobalrc
+.config/discoverrc
+.config/drkonqirc
+.config/filetypesrc
+.config/fontconfig/
+.config/kactivitymanagerdrc
+.config/kcminputrc
+.config/kconf_updaterc
+.config/kded5rc
+.config/kded6rc
+.config/kdedefaults/
+.config/knighttimerc
+.config/krunnerrc
+.config/kscreenlockerrc
+.config/ksmserverrc
+.config/ktimezonedrc
+.config/kwalletrc
+.config/kwinoutputconfig.json
+.config/kwinrc
+.config/kxkbrc
+.config/okularpartrc
+.config/okularrc
+.config/plasma-localerc
+.config/plasma-org.kde.plasma.desktop-appletsrc
+.config/plasma-welcomerc
+.config/plasmanotifyrc
+.config/plasmarc
+.config/plasmashellrc
+.config/powermanagementprofilesrc
+.config/qalculate/
+.config/spectaclerc
+.config/systemmonitorrc
+.config/xsettingsd/
+.fonts.conf

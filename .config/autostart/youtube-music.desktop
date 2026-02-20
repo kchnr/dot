@@ -1,0 +1,9 @@
+[Desktop Entry]
+Comment=YouTube Music Desktop
+Exec=firefox --new-window https://music.youtube.com
+Icon=firefox
+Name=YouTube Music
+Path=
+StartupNotify=false
+Terminal=false
+Type=Application

@@ -57,6 +57,7 @@
 /.irb_history
 /.lesshst
 .local/lib/
+.local/
 .local/bin/
 .local/state/
 .local/cache/

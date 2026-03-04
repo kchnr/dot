@@ -439,3 +439,7 @@ from-source/
 .config/systemmonitorrc
 .config/xsettingsd/
 .fonts.conf
+.config/KDE/
+.config/kactivitymanagerd-statsrc
+.config/obsidian/
+.copilot/

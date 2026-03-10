@@ -299,7 +299,6 @@ soapui-settings.xml
 .atari800
 .config/github-copilot
 .minecraft/
-.config/Code/
 .config/pavucontrol.ini
 .config/user-share/
 /.luarocks/
@@ -443,3 +442,10 @@ from-source/
 .config/kactivitymanagerd-statsrc
 .config/obsidian/
 .copilot/
+.config/kitty/kitty-themes
+
+# VSCode - ignore all, whitelist only settings & snippets
+.config/Code/**
+!.config/Code/User/
+!.config/Code/User/settings.json
+!.config/Code/User/snippets/

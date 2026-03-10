@@ -1,0 +1,26 @@
+{
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 14,
+    "editor.fontWeight": "450",
+    "explorer.confirmDelete": false,
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.colorTheme": "Ayu Light Bordered",
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "explorer.confirmDragAndDrop": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "chat.viewSessions.orientation": "stacked",
+    "makefile.configureOnOpen": true,
+    "dart.openDevTools": "flutter"
+}

@@ -1,7 +1,7 @@
 -- local light_theme = "ayu"
 -- local dark_theme = "desert"
 
-local light_theme = "ayu"
+local light_theme = "catppuccin"
 local dark_theme = "everforest"
 
 local function Light()
@@ -16,6 +16,7 @@ end
 
 return {
     -- Keep the themes you like installed…
+    { "olimorris/onedarkpro.nvim" },
     { "folke/tokyonight.nvim" },
     { "catppuccin/nvim" },
     { "altercation/vim-colors-solarized" },

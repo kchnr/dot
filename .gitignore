@@ -443,6 +443,7 @@ from-source/
 .config/obsidian/
 .copilot/
 .config/kitty/kitty-themes
+.googleearth/
 
 # VSCode - ignore all, whitelist only settings & snippets
 .config/Code/**

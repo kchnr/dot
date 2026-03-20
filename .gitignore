@@ -443,9 +443,15 @@ from-source/
 .config/obsidian/
 .copilot/
 .config/kitty/kitty-themes
+.googleearth/
 
 # VSCode - ignore all, whitelist only settings & snippets
 .config/Code/**
 !.config/Code/User/
 !.config/Code/User/settings.json
 !.config/Code/User/snippets/
+
+# Jai Agent Sandbox
+.jai/default.changes
+.jai/*.jail
+.jai/default.work

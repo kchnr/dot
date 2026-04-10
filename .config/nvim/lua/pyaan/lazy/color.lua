@@ -1,17 +1,14 @@
 -- local light_theme = "ayu"
 -- local dark_theme = "desert"
 
-local light_theme = "catppuccin"
-local dark_theme = "everforest"
-
 local function Light()
     vim.opt.background = "light"
-    vim.cmd.colorscheme(light_theme)
+    vim.cmd.colorscheme("catppuccin")
 end
 
 local function Dark()
     vim.opt.background = "dark"
-    vim.cmd.colorscheme(dark_theme)
+    vim.cmd.colorscheme("everforest")
 end
 
 return {

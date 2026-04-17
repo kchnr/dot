@@ -388,6 +388,7 @@ Unity/
 .config/Risk_of_Rain/
 .config/fabric/
 .opencode/
+.config/opencode/package-lock.json
 .vmodules/
 .ollama/
 .oh-my-zsh/

@@ -36,7 +36,6 @@ export LANG=en_US.UTF-8
 # ==========================================
 
 
-export PATH="$PATH:$HOME/.opencode/bin"
 
 # --- Node.js & Web (NVM, PNPM, Bun) ---
 export NVM_DIR="$HOME/.nvm"
@@ -86,3 +85,5 @@ alias deedo="uv run --project '$HOME/prj/deedo/' deedo"
 # Personal/Secret overrides
 [[ ! -f "$HOME/.personal-secret.sh" ]] || source "$HOME/.personal-secret.sh"
 
+# opencode
+export PATH=/home/pya/.opencode/bin:$PATH

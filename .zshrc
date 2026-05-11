@@ -87,3 +87,6 @@ alias deedo="uv run --project '$HOME/prj/deedo/' deedo"
 
 # opencode
 export PATH=/home/pya/.opencode/bin:$PATH
+
+# Zig
+export PATH=/home/pya/prj/zls/zig-out/bin/:$PATH

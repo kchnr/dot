@@ -452,7 +452,9 @@ from-source/
 !.config/Code/User/settings.json
 !.config/Code/User/snippets/
 
-# Jai Agent Sandbox
-.jai/default.changes
-.jai/*.jail
-.jai/default.work
+
+.config/Kitware/
+.config/Stirling-PDF/
+.oracle_jre_usage/
+.zotero/
+Zotero/

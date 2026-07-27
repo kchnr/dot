@@ -1,7 +1,8 @@
 # GIMP gimp-gradient-tool options
 
-(gradient "FG to BG (RGB)")
+(gradient "Skyline")
 (brush-size 51)
 (brush-hardness 0.5)
+(gradient-blend-color-space cie-lab)
 
 # end of gimp-gradient-tool options

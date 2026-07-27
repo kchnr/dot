@@ -395,7 +395,6 @@ Unity/
 .terminfo/
 .autojump/
 from-source/
-.config/GIMP/
 .config/nwg-look/
 .config/transmission/
 .thunderbird/
@@ -452,9 +451,15 @@ from-source/
 !.config/Code/User/settings.json
 !.config/Code/User/snippets/
 
-
 .config/Kitware/
 .config/Stirling-PDF/
 .oracle_jre_usage/
 .zotero/
 Zotero/
+
+.config/NecroDancer/
+.config/easyeffects/
+.config/kiorc
+.config/kwinrulesrc
+.config/powerdevilrc
+.nv/

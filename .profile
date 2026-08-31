@@ -22,3 +22,4 @@ export PATH="$PATH:/home/jean/.local/share/JetBrains/Toolbox/scripts"
 
 
 export MGFXC_WINE_PATH="/home/pya/.winemonogame"
+. "$HOME/.cargo/env"

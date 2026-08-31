@@ -45,3 +45,5 @@ transcribe() {
     rm "$temp_file.wav"
     echo "Done. Transcript saved in current directory."
 }
+
+. "$HOME/.cargo/env"
